@@ -9,6 +9,7 @@ class TimeLayer;
 class InputLayer;
 class RendererLayer;
 class SceneLayer;
+class CameraLayer;
 
 class Application {
 public:
@@ -26,4 +27,5 @@ private:
     InputLayer* inputLayer;
 	RendererLayer* rendererLayer;
 	SceneLayer* sceneLayer;
+	CameraLayer* cameraLayer;
 };
