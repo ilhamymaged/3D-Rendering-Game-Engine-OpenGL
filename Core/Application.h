@@ -21,7 +21,6 @@ public:
 private:
     std::vector<Layer*> layers;
 
-    // Core layers
     WindowLayer* windowLayer;
     TimeLayer* timeLayer;
     InputLayer* inputLayer;
