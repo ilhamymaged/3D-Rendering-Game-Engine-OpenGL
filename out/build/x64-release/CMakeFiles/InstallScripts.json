@@ -1,0 +1,10 @@
+{
+	"InstallScripts" : 
+	[
+		"C:/dev/Engine/out/build/x64-release/cmake_install.cmake",
+		"C:/dev/Engine/out/build/x64-release/Vendor/glfw/cmake_install.cmake",
+		"C:/dev/Engine/out/build/x64-release/Vendor/glfw/src/cmake_install.cmake",
+		"C:/dev/Engine/out/build/x64-release/Vendor/imgui/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

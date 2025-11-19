@@ -914,6 +914,18 @@
 			"value" : "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/link.exe"
 		},
 		{
+			"name" : "CMAKE_LIST_FILE_NAME",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Name of CMakeLists files to read"
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "CMakeLists.txt"
+		},
+		{
 			"name" : "CMAKE_MAKE_PROGRAM",
 			"properties" : 
 			[
@@ -1046,6 +1058,18 @@
 			"value" : "1"
 		},
 		{
+			"name" : "CMAKE_PROJECT_COMPAT_VERSION",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : ""
+		},
+		{
 			"name" : "CMAKE_PROJECT_DESCRIPTION",
 			"properties" : 
 			[
@@ -1091,7 +1115,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "3.5.0"
+			"value" : ""
 		},
 		{
 			"name" : "CMAKE_PROJECT_VERSION_MAJOR",
@@ -1103,7 +1127,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "3"
+			"value" : ""
 		},
 		{
 			"name" : "CMAKE_PROJECT_VERSION_MINOR",
@@ -1115,7 +1139,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "5"
+			"value" : ""
 		},
 		{
 			"name" : "CMAKE_PROJECT_VERSION_PATCH",
@@ -1127,7 +1151,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "0"
+			"value" : ""
 		},
 		{
 			"name" : "CMAKE_PROJECT_VERSION_TWEAK",

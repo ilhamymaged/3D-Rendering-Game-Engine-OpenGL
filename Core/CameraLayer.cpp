@@ -1,57 +1,58 @@
 #include "CameraLayer.h"
 #include <GLFW/glfw3.h>
+#include <iostream>
 
 CameraLayer::CameraLayer(InputLayer* inputLayer, glm::vec3 pos)
     : input(inputLayer), position(pos), front(0.0f, 0.0f, -1.0f),
     up(0.0f, 1.0f, 0.0f), yaw(-90.0f), pitch(0.0f),
-    speed(5.0f), fov(45.0f), sensitivity(0.1f)
+    speed(100.0f), fov(45.0f), sensitivity(0.1f)
 {
     updateCameraVectors();
 }
 
-void CameraLayer::onUpdate(float deltaTime) {
+void CameraLayer::onUpdate(float deltaTime) 
+{
     float velocity = speed * deltaTime;
-
-    if (input->isKeyPressed(GLFW_KEY_W))
+    if (input->isKeyPressed(W_KEY))
         position += front * velocity;
-    if (input->isKeyPressed(GLFW_KEY_S))
+    if (input->isKeyPressed(S_KEY))
         position -= front * velocity;
-    if (input->isKeyPressed(GLFW_KEY_A))
+    if (input->isKeyPressed(A_KEY))
         position -= right * velocity;
-    if (input->isKeyPressed(GLFW_KEY_D))
+    if (input->isKeyPressed(D_KEY))
         position += right * velocity;
-    if (input->isKeyPressed(GLFW_KEY_SPACE))
+    if (input->isKeyPressed(SPACE_KEY))
         position += up * velocity;
 
-    // Mouse movement
     const auto& mouse = input->getMouse();
     processMouseMovement(mouse.getDelta().x, mouse.getDelta().y);
-
     updateCameraVectors();
 }
 
-void CameraLayer::processMouseMovement(float xoffset, float yoffset) {
+void CameraLayer::processMouseMovement(float xoffset, float yoffset) 
+{
     xoffset *= sensitivity;
     yoffset *= sensitivity;
 
     yaw += xoffset;
     pitch -= yoffset; 
 
-    // Constrain pitch
     if (pitch > 89.0f) pitch = 89.0f;
     if (pitch < -89.0f) pitch = -89.0f;
 }
 
-glm::mat4 CameraLayer::getViewMatrix() const {
+glm::mat4 CameraLayer::getViewMatrix() const 
+{
     return glm::lookAt(position, position + front, up);
 }
 
-void CameraLayer::updateCameraVectors() {
+void CameraLayer::updateCameraVectors()
+{
     glm::vec3 f;
     f.x = cos(glm::radians(yaw)) * cos(glm::radians(pitch));
     f.y = sin(glm::radians(pitch));
     f.z = sin(glm::radians(yaw)) * cos(glm::radians(pitch));
     front = glm::normalize(f);
-    right = glm::normalize(glm::cross(front, glm::vec3(0.0f, 1.0f, 0.0f)));
+    right = glm::normalize(glm::cross(front, up));
     up = glm::normalize(glm::cross(right, front));
 }

@@ -15,11 +15,11 @@ Application::Application(const std::string& title, int width, int height)
 	cameraLayer = new CameraLayer(inputLayer);
 	sceneLayer = new SceneLayer(rendererLayer, inputLayer, cameraLayer, windowLayer); 
 
-    pushLayer(timeLayer);
     pushLayer(windowLayer);
+    pushLayer(timeLayer);
     pushLayer(inputLayer);
-	pushLayer(cameraLayer);
 	pushLayer(rendererLayer);
+    pushLayer(cameraLayer);
 	pushLayer(sceneLayer);
 }
 
@@ -39,10 +39,8 @@ void Application::run()
 {
     while (!windowLayer->shouldClose()) 
     {
-        timeLayer->onUpdate(0.0f);
         float deltaTime = timeLayer->getDeltaTime();
 
-        // Update all layers
         for (auto layer : layers) layer->onUpdate(deltaTime);
         for (auto layer : layers) layer->onRender();
     }
