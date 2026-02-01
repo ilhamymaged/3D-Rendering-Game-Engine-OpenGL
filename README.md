@@ -1,1 +1,1 @@
-"# 3D-OpenGL-C-Game-Engine" 
+"# A modular 3D rendering & game engine built with modern OpenGL in C++." 
