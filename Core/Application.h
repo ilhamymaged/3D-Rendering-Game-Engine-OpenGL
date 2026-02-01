@@ -5,27 +5,27 @@
 #include <Layer.h>
 
 class WindowLayer;
-class TimeLayer;
-class InputLayer;
 class RendererLayer;
 class SceneLayer;
-class CameraLayer;
+class InputLayer;
+class UILayer;
 
-class Application {
+class Application 
+{
 public:
     Application(const std::string& title, int width, int height);
     ~Application();
 
-    void run();
-    void pushLayer(Layer* layer); 
+    virtual void run();
+    virtual void pushLayer(Layer* layer); 
 
 private:
     std::vector<Layer*> layers;
 
     WindowLayer* windowLayer;
-    TimeLayer* timeLayer;
-    InputLayer* inputLayer;
 	RendererLayer* rendererLayer;
 	SceneLayer* sceneLayer;
-	CameraLayer* cameraLayer;
+	InputLayer* inputLayer;
+    UILayer* _UILayer;
 };
+

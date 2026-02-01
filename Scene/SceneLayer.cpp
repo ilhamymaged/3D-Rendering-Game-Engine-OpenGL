@@ -1,63 +1,68 @@
 #include <SceneLayer.h>
 #include <Components.h>
-#include <Mesh.h>
+#include <Events.h>
+#include <EventDispatcher.h>
+#include <Input.h>
+#include <ResourceManager.h>
+#include <Terrain/Terrain.h>
+#include <InputLayer.h>
+#include <CameraSystem.h>
+#include <RotationSystem.h>
+#include <RenderSystem.h>
+#include <PhysicsSystem.h>
+#include <3rdPersonCameraSystem.h>
 
-SceneLayer::SceneLayer(RendererLayer* renderer, InputLayer* inputLayer,
-    CameraLayer* cameraLayer, WindowLayer* windowLayer)
-	:renderLayer{renderer}, inputLayer(inputLayer), cameraLayer(cameraLayer),
-    windowLayer(windowLayer), assets{}, shader(nullptr)
-{}
-
-void SceneLayer::onAttach()
+SceneLayer::SceneLayer(RendererLayer* renderer)
+    :renderLayer{ renderer }, camera{renderLayer->windowWidth, renderLayer->windowHeight}
 {
-	shader = new Shader("cube");
-    shader->setInt(0, "diffuseTexture");
+    systemManager.addSystem<CameraSystem>(camera);
+    systemManager.addSystem<RenderSystem>(renderer, camera);
+	systemManager.addSystem<RotationSystem>();
 
-	auto cube = registry.create();
-    std::shared_ptr<Model> model = assets.loadModel("backpack");
-	registry.emplace<Transform>(cube);
-	registry.emplace<Renderable>(cube, model);
-}
+    auto cameraEntity = registry.create();
+    registry.emplace<CameraComponent>(cameraEntity, camera);
 
-void SceneLayer::onDetach()
-{
-	delete shader;
-}
+    auto ray = registry.create();
+	registry.emplace<rayInfo>(ray, 3);
 
-void SceneLayer::onUpdate(float deltaTime)
-{
-}
+    auto pointLight = registry.create();
+    registry.emplace<PointLight>(pointLight,
+        glm::vec3(2.0f, 5.0f, 3.0f),
+        glm::vec3(1.0f, 1.0f, 1.0f),
+        glm::vec3(0.1f, 0.1f, 0.1f)
+	);
+	registry.emplace<Rotator>(pointLight, true);
 
-void SceneLayer::onRender()
-{
-    glm::mat4 viewMat = cameraLayer->getViewMatrix();
-    glm::mat4 projection = glm::perspective(
-        glm::radians(cameraLayer->getFOV()),
-        (float)windowLayer->getWidth()/windowLayer->getHeight(), 
-        0.1f, 100.0f
+    auto sphereEntity = registry.create();
+    registry.emplace<Sphere>(sphereEntity,
+            glm::vec3(0.0f),
+            0.5f,
+		    0.5f,
+            glm::vec3(1.0f, 0.0f, 1.0f)
     );
+    registry.emplace<Rotator>(sphereEntity, true);
 
-    renderLayer->submit([this, viewMat, projection]() {
-        shader->use();
-        shader->setMat4(viewMat, "view");
-        shader->setMat4(projection, "projection");
-
-        auto view = registry.view<Transform, Renderable>();
-        for (auto entity : view) 
+    auto planeEntity = registry.create();
+    registry.emplace<Plane>(planeEntity,
+        Plane
         {
-            auto& transform = view.get<Transform>(entity);
-            auto& renderable = view.get<Renderable>(entity);
-
-            glm::mat4 model = glm::mat4(1.0f);
-            model = glm::translate(model, transform.position);
-            model = glm::rotate(model, transform.rotation.x, glm::vec3(1.0f, 0.0f, 0.0f));
-            model = glm::rotate(model, transform.rotation.y, glm::vec3(0.0f, 1.0f, 0.0f));
-            model = glm::rotate(model, transform.rotation.z, glm::vec3(0.0f, 0.0f, 1.0f));
-            model = glm::scale(model, transform.scale);
-
-            shader->setMat4(model, "model");
-            renderable.model->render();
-        }
-    });
+            .normal = glm::vec3(0.0f, 1.0f, 0.0f),
+            .color = glm::vec3(1.0f, 1.0f, 1.0f),
+            .point = glm::vec3(0.0f, -0.5f, 0.0f),
+			.reflectivity = 0.0f
+        });
+	//registry.emplace<Rotator>(planeEntity, false);
 }
-	
+
+SceneLayer::~SceneLayer() = default;
+
+void SceneLayer::onUpdate(float dt)
+{
+    systemManager.update(registry, dt);
+}
+
+void SceneLayer::onEvent(Event& event)
+{
+    systemManager.fireEvents(event);
+}
+

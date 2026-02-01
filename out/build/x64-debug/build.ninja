@@ -11,7 +11,7 @@
 # =============================================================================
 
 # =============================================================================
-# Project: 3D Game Engine
+# Project: GameEngine
 # Configurations: Debug
 # =============================================================================
 
@@ -41,168 +41,277 @@ include CMakeFiles\rules.ninja
 
 cmake_ninja_workdir = C$:\dev\Engine\out\build\x64-debug\
 # =============================================================================
-# Object build statements for EXECUTABLE target CMakeTarget
+# Object build statements for EXECUTABLE target GameEngine
 
 
 #############################################
-# Order-only phony target for CMakeTarget
+# Order-only phony target for GameEngine
 
-build cmake_object_order_depends_target_CMakeTarget: phony || cmake_object_order_depends_target_ImGui cmake_object_order_depends_target_glfw
+build cmake_object_order_depends_target_GameEngine: phony || cmake_object_order_depends_target_ImGui cmake_object_order_depends_target_glfw
 
-build CMakeFiles\CMakeTarget.dir\Core\Application.cpp.obj: CXX_COMPILER__CMakeTarget_unscanned_Debug C$:\dev\Engine\Core\Application.cpp || cmake_object_order_depends_target_CMakeTarget
-  DEFINES = -DIMGUI_ENABLE_DOCKING=1
+build CMakeFiles\GameEngine.dir\Core\Application.cpp.obj: CXX_COMPILER__GameEngine_unscanned_Debug C$:\dev\Engine\Core\Application.cpp || cmake_object_order_depends_target_GameEngine
+  DEFINES = -DENGINE_EXPORTS -DIMGUI_ENABLE_DOCKING=1
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -std:c++20
-  INCLUDES = -IC:\dev\Engine\Core -IC:\dev\Engine\Editor -IC:\dev\Engine\Renderer -IC:\dev\Engine\Scene -IC:\dev\Engine\Vendor\entt -IC:\dev\Engine\Vendor\glm -IC:\dev\Engine\Vendor\glad\include -IC:\dev\Engine\Vendor\KHR -IC:\dev\Engine\Vendor\stb -IC:\dev\Engine\Vendor\tiny_obj_loader -IC:\dev\Engine\Vendor\glfw\include -IC:\dev\Engine\Vendor\imgui -IC:\dev\Engine\Vendor\imgui\backends
-  OBJECT_DIR = CMakeFiles\CMakeTarget.dir
-  OBJECT_FILE_DIR = CMakeFiles\CMakeTarget.dir\Core
-  TARGET_COMPILE_PDB = CMakeFiles\CMakeTarget.dir\
-  TARGET_PDB = CMakeTarget.pdb
+  INCLUDES = -IC:\dev\Engine\Core -IC:\dev\Engine\ECS -IC:\dev\Engine\Systems -IC:\dev\Engine\Rendering -IC:\dev\Engine\Scene -IC:\dev\Engine\Editor -IC:\dev\Engine\Vendor\entt -IC:\dev\Engine\Vendor\glm -IC:\dev\Engine\Vendor\glad\include -IC:\dev\Engine\Vendor\KHR -IC:\dev\Engine\Vendor\stb -IC:\dev\Engine\Vendor\assimp\include -IC:\dev\Engine\Vendor\glfw\include -IC:\dev\Engine\Vendor\imgui -IC:\dev\Engine\Vendor\imgui\backends
+  OBJECT_DIR = CMakeFiles\GameEngine.dir
+  OBJECT_FILE_DIR = CMakeFiles\GameEngine.dir\Core
+  TARGET_COMPILE_PDB = CMakeFiles\GameEngine.dir\
+  TARGET_PDB = GameEngine.pdb
 
-build CMakeFiles\CMakeTarget.dir\Core\CameraLayer.cpp.obj: CXX_COMPILER__CMakeTarget_unscanned_Debug C$:\dev\Engine\Core\CameraLayer.cpp || cmake_object_order_depends_target_CMakeTarget
-  DEFINES = -DIMGUI_ENABLE_DOCKING=1
+build CMakeFiles\GameEngine.dir\Core\GameTime.cpp.obj: CXX_COMPILER__GameEngine_unscanned_Debug C$:\dev\Engine\Core\GameTime.cpp || cmake_object_order_depends_target_GameEngine
+  DEFINES = -DENGINE_EXPORTS -DIMGUI_ENABLE_DOCKING=1
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -std:c++20
-  INCLUDES = -IC:\dev\Engine\Core -IC:\dev\Engine\Editor -IC:\dev\Engine\Renderer -IC:\dev\Engine\Scene -IC:\dev\Engine\Vendor\entt -IC:\dev\Engine\Vendor\glm -IC:\dev\Engine\Vendor\glad\include -IC:\dev\Engine\Vendor\KHR -IC:\dev\Engine\Vendor\stb -IC:\dev\Engine\Vendor\tiny_obj_loader -IC:\dev\Engine\Vendor\glfw\include -IC:\dev\Engine\Vendor\imgui -IC:\dev\Engine\Vendor\imgui\backends
-  OBJECT_DIR = CMakeFiles\CMakeTarget.dir
-  OBJECT_FILE_DIR = CMakeFiles\CMakeTarget.dir\Core
-  TARGET_COMPILE_PDB = CMakeFiles\CMakeTarget.dir\
-  TARGET_PDB = CMakeTarget.pdb
+  INCLUDES = -IC:\dev\Engine\Core -IC:\dev\Engine\ECS -IC:\dev\Engine\Systems -IC:\dev\Engine\Rendering -IC:\dev\Engine\Scene -IC:\dev\Engine\Editor -IC:\dev\Engine\Vendor\entt -IC:\dev\Engine\Vendor\glm -IC:\dev\Engine\Vendor\glad\include -IC:\dev\Engine\Vendor\KHR -IC:\dev\Engine\Vendor\stb -IC:\dev\Engine\Vendor\assimp\include -IC:\dev\Engine\Vendor\glfw\include -IC:\dev\Engine\Vendor\imgui -IC:\dev\Engine\Vendor\imgui\backends
+  OBJECT_DIR = CMakeFiles\GameEngine.dir
+  OBJECT_FILE_DIR = CMakeFiles\GameEngine.dir\Core
+  TARGET_COMPILE_PDB = CMakeFiles\GameEngine.dir\
+  TARGET_PDB = GameEngine.pdb
 
-build CMakeFiles\CMakeTarget.dir\Core\InputLayer.cpp.obj: CXX_COMPILER__CMakeTarget_unscanned_Debug C$:\dev\Engine\Core\InputLayer.cpp || cmake_object_order_depends_target_CMakeTarget
-  DEFINES = -DIMGUI_ENABLE_DOCKING=1
+build CMakeFiles\GameEngine.dir\Core\Input.cpp.obj: CXX_COMPILER__GameEngine_unscanned_Debug C$:\dev\Engine\Core\Input.cpp || cmake_object_order_depends_target_GameEngine
+  DEFINES = -DENGINE_EXPORTS -DIMGUI_ENABLE_DOCKING=1
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -std:c++20
-  INCLUDES = -IC:\dev\Engine\Core -IC:\dev\Engine\Editor -IC:\dev\Engine\Renderer -IC:\dev\Engine\Scene -IC:\dev\Engine\Vendor\entt -IC:\dev\Engine\Vendor\glm -IC:\dev\Engine\Vendor\glad\include -IC:\dev\Engine\Vendor\KHR -IC:\dev\Engine\Vendor\stb -IC:\dev\Engine\Vendor\tiny_obj_loader -IC:\dev\Engine\Vendor\glfw\include -IC:\dev\Engine\Vendor\imgui -IC:\dev\Engine\Vendor\imgui\backends
-  OBJECT_DIR = CMakeFiles\CMakeTarget.dir
-  OBJECT_FILE_DIR = CMakeFiles\CMakeTarget.dir\Core
-  TARGET_COMPILE_PDB = CMakeFiles\CMakeTarget.dir\
-  TARGET_PDB = CMakeTarget.pdb
+  INCLUDES = -IC:\dev\Engine\Core -IC:\dev\Engine\ECS -IC:\dev\Engine\Systems -IC:\dev\Engine\Rendering -IC:\dev\Engine\Scene -IC:\dev\Engine\Editor -IC:\dev\Engine\Vendor\entt -IC:\dev\Engine\Vendor\glm -IC:\dev\Engine\Vendor\glad\include -IC:\dev\Engine\Vendor\KHR -IC:\dev\Engine\Vendor\stb -IC:\dev\Engine\Vendor\assimp\include -IC:\dev\Engine\Vendor\glfw\include -IC:\dev\Engine\Vendor\imgui -IC:\dev\Engine\Vendor\imgui\backends
+  OBJECT_DIR = CMakeFiles\GameEngine.dir
+  OBJECT_FILE_DIR = CMakeFiles\GameEngine.dir\Core
+  TARGET_COMPILE_PDB = CMakeFiles\GameEngine.dir\
+  TARGET_PDB = GameEngine.pdb
 
-build CMakeFiles\CMakeTarget.dir\Core\MouseInputs.cpp.obj: CXX_COMPILER__CMakeTarget_unscanned_Debug C$:\dev\Engine\Core\MouseInputs.cpp || cmake_object_order_depends_target_CMakeTarget
-  DEFINES = -DIMGUI_ENABLE_DOCKING=1
+build CMakeFiles\GameEngine.dir\Core\InputLayer.cpp.obj: CXX_COMPILER__GameEngine_unscanned_Debug C$:\dev\Engine\Core\InputLayer.cpp || cmake_object_order_depends_target_GameEngine
+  DEFINES = -DENGINE_EXPORTS -DIMGUI_ENABLE_DOCKING=1
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -std:c++20
-  INCLUDES = -IC:\dev\Engine\Core -IC:\dev\Engine\Editor -IC:\dev\Engine\Renderer -IC:\dev\Engine\Scene -IC:\dev\Engine\Vendor\entt -IC:\dev\Engine\Vendor\glm -IC:\dev\Engine\Vendor\glad\include -IC:\dev\Engine\Vendor\KHR -IC:\dev\Engine\Vendor\stb -IC:\dev\Engine\Vendor\tiny_obj_loader -IC:\dev\Engine\Vendor\glfw\include -IC:\dev\Engine\Vendor\imgui -IC:\dev\Engine\Vendor\imgui\backends
-  OBJECT_DIR = CMakeFiles\CMakeTarget.dir
-  OBJECT_FILE_DIR = CMakeFiles\CMakeTarget.dir\Core
-  TARGET_COMPILE_PDB = CMakeFiles\CMakeTarget.dir\
-  TARGET_PDB = CMakeTarget.pdb
+  INCLUDES = -IC:\dev\Engine\Core -IC:\dev\Engine\ECS -IC:\dev\Engine\Systems -IC:\dev\Engine\Rendering -IC:\dev\Engine\Scene -IC:\dev\Engine\Editor -IC:\dev\Engine\Vendor\entt -IC:\dev\Engine\Vendor\glm -IC:\dev\Engine\Vendor\glad\include -IC:\dev\Engine\Vendor\KHR -IC:\dev\Engine\Vendor\stb -IC:\dev\Engine\Vendor\assimp\include -IC:\dev\Engine\Vendor\glfw\include -IC:\dev\Engine\Vendor\imgui -IC:\dev\Engine\Vendor\imgui\backends
+  OBJECT_DIR = CMakeFiles\GameEngine.dir
+  OBJECT_FILE_DIR = CMakeFiles\GameEngine.dir\Core
+  TARGET_COMPILE_PDB = CMakeFiles\GameEngine.dir\
+  TARGET_PDB = GameEngine.pdb
 
-build CMakeFiles\CMakeTarget.dir\Core\TimeLayer.cpp.obj: CXX_COMPILER__CMakeTarget_unscanned_Debug C$:\dev\Engine\Core\TimeLayer.cpp || cmake_object_order_depends_target_CMakeTarget
-  DEFINES = -DIMGUI_ENABLE_DOCKING=1
+build CMakeFiles\GameEngine.dir\Core\WindowLayer.cpp.obj: CXX_COMPILER__GameEngine_unscanned_Debug C$:\dev\Engine\Core\WindowLayer.cpp || cmake_object_order_depends_target_GameEngine
+  DEFINES = -DENGINE_EXPORTS -DIMGUI_ENABLE_DOCKING=1
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -std:c++20
-  INCLUDES = -IC:\dev\Engine\Core -IC:\dev\Engine\Editor -IC:\dev\Engine\Renderer -IC:\dev\Engine\Scene -IC:\dev\Engine\Vendor\entt -IC:\dev\Engine\Vendor\glm -IC:\dev\Engine\Vendor\glad\include -IC:\dev\Engine\Vendor\KHR -IC:\dev\Engine\Vendor\stb -IC:\dev\Engine\Vendor\tiny_obj_loader -IC:\dev\Engine\Vendor\glfw\include -IC:\dev\Engine\Vendor\imgui -IC:\dev\Engine\Vendor\imgui\backends
-  OBJECT_DIR = CMakeFiles\CMakeTarget.dir
-  OBJECT_FILE_DIR = CMakeFiles\CMakeTarget.dir\Core
-  TARGET_COMPILE_PDB = CMakeFiles\CMakeTarget.dir\
-  TARGET_PDB = CMakeTarget.pdb
+  INCLUDES = -IC:\dev\Engine\Core -IC:\dev\Engine\ECS -IC:\dev\Engine\Systems -IC:\dev\Engine\Rendering -IC:\dev\Engine\Scene -IC:\dev\Engine\Editor -IC:\dev\Engine\Vendor\entt -IC:\dev\Engine\Vendor\glm -IC:\dev\Engine\Vendor\glad\include -IC:\dev\Engine\Vendor\KHR -IC:\dev\Engine\Vendor\stb -IC:\dev\Engine\Vendor\assimp\include -IC:\dev\Engine\Vendor\glfw\include -IC:\dev\Engine\Vendor\imgui -IC:\dev\Engine\Vendor\imgui\backends
+  OBJECT_DIR = CMakeFiles\GameEngine.dir
+  OBJECT_FILE_DIR = CMakeFiles\GameEngine.dir\Core
+  TARGET_COMPILE_PDB = CMakeFiles\GameEngine.dir\
+  TARGET_PDB = GameEngine.pdb
 
-build CMakeFiles\CMakeTarget.dir\Core\WindowLayer.cpp.obj: CXX_COMPILER__CMakeTarget_unscanned_Debug C$:\dev\Engine\Core\WindowLayer.cpp || cmake_object_order_depends_target_CMakeTarget
-  DEFINES = -DIMGUI_ENABLE_DOCKING=1
+build CMakeFiles\GameEngine.dir\ECS\SystemManager.cpp.obj: CXX_COMPILER__GameEngine_unscanned_Debug C$:\dev\Engine\ECS\SystemManager.cpp || cmake_object_order_depends_target_GameEngine
+  DEFINES = -DENGINE_EXPORTS -DIMGUI_ENABLE_DOCKING=1
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -std:c++20
-  INCLUDES = -IC:\dev\Engine\Core -IC:\dev\Engine\Editor -IC:\dev\Engine\Renderer -IC:\dev\Engine\Scene -IC:\dev\Engine\Vendor\entt -IC:\dev\Engine\Vendor\glm -IC:\dev\Engine\Vendor\glad\include -IC:\dev\Engine\Vendor\KHR -IC:\dev\Engine\Vendor\stb -IC:\dev\Engine\Vendor\tiny_obj_loader -IC:\dev\Engine\Vendor\glfw\include -IC:\dev\Engine\Vendor\imgui -IC:\dev\Engine\Vendor\imgui\backends
-  OBJECT_DIR = CMakeFiles\CMakeTarget.dir
-  OBJECT_FILE_DIR = CMakeFiles\CMakeTarget.dir\Core
-  TARGET_COMPILE_PDB = CMakeFiles\CMakeTarget.dir\
-  TARGET_PDB = CMakeTarget.pdb
+  INCLUDES = -IC:\dev\Engine\Core -IC:\dev\Engine\ECS -IC:\dev\Engine\Systems -IC:\dev\Engine\Rendering -IC:\dev\Engine\Scene -IC:\dev\Engine\Editor -IC:\dev\Engine\Vendor\entt -IC:\dev\Engine\Vendor\glm -IC:\dev\Engine\Vendor\glad\include -IC:\dev\Engine\Vendor\KHR -IC:\dev\Engine\Vendor\stb -IC:\dev\Engine\Vendor\assimp\include -IC:\dev\Engine\Vendor\glfw\include -IC:\dev\Engine\Vendor\imgui -IC:\dev\Engine\Vendor\imgui\backends
+  OBJECT_DIR = CMakeFiles\GameEngine.dir
+  OBJECT_FILE_DIR = CMakeFiles\GameEngine.dir\ECS
+  TARGET_COMPILE_PDB = CMakeFiles\GameEngine.dir\
+  TARGET_PDB = GameEngine.pdb
 
-build CMakeFiles\CMakeTarget.dir\Renderer\Mesh.cpp.obj: CXX_COMPILER__CMakeTarget_unscanned_Debug C$:\dev\Engine\Renderer\Mesh.cpp || cmake_object_order_depends_target_CMakeTarget
-  DEFINES = -DIMGUI_ENABLE_DOCKING=1
+build CMakeFiles\GameEngine.dir\Editor\UILayer.cpp.obj: CXX_COMPILER__GameEngine_unscanned_Debug C$:\dev\Engine\Editor\UILayer.cpp || cmake_object_order_depends_target_GameEngine
+  DEFINES = -DENGINE_EXPORTS -DIMGUI_ENABLE_DOCKING=1
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -std:c++20
-  INCLUDES = -IC:\dev\Engine\Core -IC:\dev\Engine\Editor -IC:\dev\Engine\Renderer -IC:\dev\Engine\Scene -IC:\dev\Engine\Vendor\entt -IC:\dev\Engine\Vendor\glm -IC:\dev\Engine\Vendor\glad\include -IC:\dev\Engine\Vendor\KHR -IC:\dev\Engine\Vendor\stb -IC:\dev\Engine\Vendor\tiny_obj_loader -IC:\dev\Engine\Vendor\glfw\include -IC:\dev\Engine\Vendor\imgui -IC:\dev\Engine\Vendor\imgui\backends
-  OBJECT_DIR = CMakeFiles\CMakeTarget.dir
-  OBJECT_FILE_DIR = CMakeFiles\CMakeTarget.dir\Renderer
-  TARGET_COMPILE_PDB = CMakeFiles\CMakeTarget.dir\
-  TARGET_PDB = CMakeTarget.pdb
+  INCLUDES = -IC:\dev\Engine\Core -IC:\dev\Engine\ECS -IC:\dev\Engine\Systems -IC:\dev\Engine\Rendering -IC:\dev\Engine\Scene -IC:\dev\Engine\Editor -IC:\dev\Engine\Vendor\entt -IC:\dev\Engine\Vendor\glm -IC:\dev\Engine\Vendor\glad\include -IC:\dev\Engine\Vendor\KHR -IC:\dev\Engine\Vendor\stb -IC:\dev\Engine\Vendor\assimp\include -IC:\dev\Engine\Vendor\glfw\include -IC:\dev\Engine\Vendor\imgui -IC:\dev\Engine\Vendor\imgui\backends
+  OBJECT_DIR = CMakeFiles\GameEngine.dir
+  OBJECT_FILE_DIR = CMakeFiles\GameEngine.dir\Editor
+  TARGET_COMPILE_PDB = CMakeFiles\GameEngine.dir\
+  TARGET_PDB = GameEngine.pdb
 
-build CMakeFiles\CMakeTarget.dir\Renderer\RendererLayer.cpp.obj: CXX_COMPILER__CMakeTarget_unscanned_Debug C$:\dev\Engine\Renderer\RendererLayer.cpp || cmake_object_order_depends_target_CMakeTarget
-  DEFINES = -DIMGUI_ENABLE_DOCKING=1
+build CMakeFiles\GameEngine.dir\GameEngine.cpp.obj: CXX_COMPILER__GameEngine_unscanned_Debug C$:\dev\Engine\GameEngine.cpp || cmake_object_order_depends_target_GameEngine
+  DEFINES = -DENGINE_EXPORTS -DIMGUI_ENABLE_DOCKING=1
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -std:c++20
-  INCLUDES = -IC:\dev\Engine\Core -IC:\dev\Engine\Editor -IC:\dev\Engine\Renderer -IC:\dev\Engine\Scene -IC:\dev\Engine\Vendor\entt -IC:\dev\Engine\Vendor\glm -IC:\dev\Engine\Vendor\glad\include -IC:\dev\Engine\Vendor\KHR -IC:\dev\Engine\Vendor\stb -IC:\dev\Engine\Vendor\tiny_obj_loader -IC:\dev\Engine\Vendor\glfw\include -IC:\dev\Engine\Vendor\imgui -IC:\dev\Engine\Vendor\imgui\backends
-  OBJECT_DIR = CMakeFiles\CMakeTarget.dir
-  OBJECT_FILE_DIR = CMakeFiles\CMakeTarget.dir\Renderer
-  TARGET_COMPILE_PDB = CMakeFiles\CMakeTarget.dir\
-  TARGET_PDB = CMakeTarget.pdb
+  INCLUDES = -IC:\dev\Engine\Core -IC:\dev\Engine\ECS -IC:\dev\Engine\Systems -IC:\dev\Engine\Rendering -IC:\dev\Engine\Scene -IC:\dev\Engine\Editor -IC:\dev\Engine\Vendor\entt -IC:\dev\Engine\Vendor\glm -IC:\dev\Engine\Vendor\glad\include -IC:\dev\Engine\Vendor\KHR -IC:\dev\Engine\Vendor\stb -IC:\dev\Engine\Vendor\assimp\include -IC:\dev\Engine\Vendor\glfw\include -IC:\dev\Engine\Vendor\imgui -IC:\dev\Engine\Vendor\imgui\backends
+  OBJECT_DIR = CMakeFiles\GameEngine.dir
+  OBJECT_FILE_DIR = CMakeFiles\GameEngine.dir
+  TARGET_COMPILE_PDB = CMakeFiles\GameEngine.dir\
+  TARGET_PDB = GameEngine.pdb
 
-build CMakeFiles\CMakeTarget.dir\Renderer\Shader.cpp.obj: CXX_COMPILER__CMakeTarget_unscanned_Debug C$:\dev\Engine\Renderer\Shader.cpp || cmake_object_order_depends_target_CMakeTarget
-  DEFINES = -DIMGUI_ENABLE_DOCKING=1
+build CMakeFiles\GameEngine.dir\Rendering\Material.cpp.obj: CXX_COMPILER__GameEngine_unscanned_Debug C$:\dev\Engine\Rendering\Material.cpp || cmake_object_order_depends_target_GameEngine
+  DEFINES = -DENGINE_EXPORTS -DIMGUI_ENABLE_DOCKING=1
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -std:c++20
-  INCLUDES = -IC:\dev\Engine\Core -IC:\dev\Engine\Editor -IC:\dev\Engine\Renderer -IC:\dev\Engine\Scene -IC:\dev\Engine\Vendor\entt -IC:\dev\Engine\Vendor\glm -IC:\dev\Engine\Vendor\glad\include -IC:\dev\Engine\Vendor\KHR -IC:\dev\Engine\Vendor\stb -IC:\dev\Engine\Vendor\tiny_obj_loader -IC:\dev\Engine\Vendor\glfw\include -IC:\dev\Engine\Vendor\imgui -IC:\dev\Engine\Vendor\imgui\backends
-  OBJECT_DIR = CMakeFiles\CMakeTarget.dir
-  OBJECT_FILE_DIR = CMakeFiles\CMakeTarget.dir\Renderer
-  TARGET_COMPILE_PDB = CMakeFiles\CMakeTarget.dir\
-  TARGET_PDB = CMakeTarget.pdb
+  INCLUDES = -IC:\dev\Engine\Core -IC:\dev\Engine\ECS -IC:\dev\Engine\Systems -IC:\dev\Engine\Rendering -IC:\dev\Engine\Scene -IC:\dev\Engine\Editor -IC:\dev\Engine\Vendor\entt -IC:\dev\Engine\Vendor\glm -IC:\dev\Engine\Vendor\glad\include -IC:\dev\Engine\Vendor\KHR -IC:\dev\Engine\Vendor\stb -IC:\dev\Engine\Vendor\assimp\include -IC:\dev\Engine\Vendor\glfw\include -IC:\dev\Engine\Vendor\imgui -IC:\dev\Engine\Vendor\imgui\backends
+  OBJECT_DIR = CMakeFiles\GameEngine.dir
+  OBJECT_FILE_DIR = CMakeFiles\GameEngine.dir\Rendering
+  TARGET_COMPILE_PDB = CMakeFiles\GameEngine.dir\
+  TARGET_PDB = GameEngine.pdb
 
-build CMakeFiles\CMakeTarget.dir\Renderer\Texture.cpp.obj: CXX_COMPILER__CMakeTarget_unscanned_Debug C$:\dev\Engine\Renderer\Texture.cpp || cmake_object_order_depends_target_CMakeTarget
-  DEFINES = -DIMGUI_ENABLE_DOCKING=1
+build CMakeFiles\GameEngine.dir\Rendering\Mesh.cpp.obj: CXX_COMPILER__GameEngine_unscanned_Debug C$:\dev\Engine\Rendering\Mesh.cpp || cmake_object_order_depends_target_GameEngine
+  DEFINES = -DENGINE_EXPORTS -DIMGUI_ENABLE_DOCKING=1
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -std:c++20
-  INCLUDES = -IC:\dev\Engine\Core -IC:\dev\Engine\Editor -IC:\dev\Engine\Renderer -IC:\dev\Engine\Scene -IC:\dev\Engine\Vendor\entt -IC:\dev\Engine\Vendor\glm -IC:\dev\Engine\Vendor\glad\include -IC:\dev\Engine\Vendor\KHR -IC:\dev\Engine\Vendor\stb -IC:\dev\Engine\Vendor\tiny_obj_loader -IC:\dev\Engine\Vendor\glfw\include -IC:\dev\Engine\Vendor\imgui -IC:\dev\Engine\Vendor\imgui\backends
-  OBJECT_DIR = CMakeFiles\CMakeTarget.dir
-  OBJECT_FILE_DIR = CMakeFiles\CMakeTarget.dir\Renderer
-  TARGET_COMPILE_PDB = CMakeFiles\CMakeTarget.dir\
-  TARGET_PDB = CMakeTarget.pdb
+  INCLUDES = -IC:\dev\Engine\Core -IC:\dev\Engine\ECS -IC:\dev\Engine\Systems -IC:\dev\Engine\Rendering -IC:\dev\Engine\Scene -IC:\dev\Engine\Editor -IC:\dev\Engine\Vendor\entt -IC:\dev\Engine\Vendor\glm -IC:\dev\Engine\Vendor\glad\include -IC:\dev\Engine\Vendor\KHR -IC:\dev\Engine\Vendor\stb -IC:\dev\Engine\Vendor\assimp\include -IC:\dev\Engine\Vendor\glfw\include -IC:\dev\Engine\Vendor\imgui -IC:\dev\Engine\Vendor\imgui\backends
+  OBJECT_DIR = CMakeFiles\GameEngine.dir
+  OBJECT_FILE_DIR = CMakeFiles\GameEngine.dir\Rendering
+  TARGET_COMPILE_PDB = CMakeFiles\GameEngine.dir\
+  TARGET_PDB = GameEngine.pdb
 
-build CMakeFiles\CMakeTarget.dir\Scene\SceneLayer.cpp.obj: CXX_COMPILER__CMakeTarget_unscanned_Debug C$:\dev\Engine\Scene\SceneLayer.cpp || cmake_object_order_depends_target_CMakeTarget
-  DEFINES = -DIMGUI_ENABLE_DOCKING=1
+build CMakeFiles\GameEngine.dir\Rendering\MeshRenderer.cpp.obj: CXX_COMPILER__GameEngine_unscanned_Debug C$:\dev\Engine\Rendering\MeshRenderer.cpp || cmake_object_order_depends_target_GameEngine
+  DEFINES = -DENGINE_EXPORTS -DIMGUI_ENABLE_DOCKING=1
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -std:c++20
-  INCLUDES = -IC:\dev\Engine\Core -IC:\dev\Engine\Editor -IC:\dev\Engine\Renderer -IC:\dev\Engine\Scene -IC:\dev\Engine\Vendor\entt -IC:\dev\Engine\Vendor\glm -IC:\dev\Engine\Vendor\glad\include -IC:\dev\Engine\Vendor\KHR -IC:\dev\Engine\Vendor\stb -IC:\dev\Engine\Vendor\tiny_obj_loader -IC:\dev\Engine\Vendor\glfw\include -IC:\dev\Engine\Vendor\imgui -IC:\dev\Engine\Vendor\imgui\backends
-  OBJECT_DIR = CMakeFiles\CMakeTarget.dir
-  OBJECT_FILE_DIR = CMakeFiles\CMakeTarget.dir\Scene
-  TARGET_COMPILE_PDB = CMakeFiles\CMakeTarget.dir\
-  TARGET_PDB = CMakeTarget.pdb
+  INCLUDES = -IC:\dev\Engine\Core -IC:\dev\Engine\ECS -IC:\dev\Engine\Systems -IC:\dev\Engine\Rendering -IC:\dev\Engine\Scene -IC:\dev\Engine\Editor -IC:\dev\Engine\Vendor\entt -IC:\dev\Engine\Vendor\glm -IC:\dev\Engine\Vendor\glad\include -IC:\dev\Engine\Vendor\KHR -IC:\dev\Engine\Vendor\stb -IC:\dev\Engine\Vendor\assimp\include -IC:\dev\Engine\Vendor\glfw\include -IC:\dev\Engine\Vendor\imgui -IC:\dev\Engine\Vendor\imgui\backends
+  OBJECT_DIR = CMakeFiles\GameEngine.dir
+  OBJECT_FILE_DIR = CMakeFiles\GameEngine.dir\Rendering
+  TARGET_COMPILE_PDB = CMakeFiles\GameEngine.dir\
+  TARGET_PDB = GameEngine.pdb
 
-build CMakeFiles\CMakeTarget.dir\GameEngine.cpp.obj: CXX_COMPILER__CMakeTarget_unscanned_Debug C$:\dev\Engine\GameEngine.cpp || cmake_object_order_depends_target_CMakeTarget
-  DEFINES = -DIMGUI_ENABLE_DOCKING=1
+build CMakeFiles\GameEngine.dir\Rendering\Model.cpp.obj: CXX_COMPILER__GameEngine_unscanned_Debug C$:\dev\Engine\Rendering\Model.cpp || cmake_object_order_depends_target_GameEngine
+  DEFINES = -DENGINE_EXPORTS -DIMGUI_ENABLE_DOCKING=1
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -std:c++20
-  INCLUDES = -IC:\dev\Engine\Core -IC:\dev\Engine\Editor -IC:\dev\Engine\Renderer -IC:\dev\Engine\Scene -IC:\dev\Engine\Vendor\entt -IC:\dev\Engine\Vendor\glm -IC:\dev\Engine\Vendor\glad\include -IC:\dev\Engine\Vendor\KHR -IC:\dev\Engine\Vendor\stb -IC:\dev\Engine\Vendor\tiny_obj_loader -IC:\dev\Engine\Vendor\glfw\include -IC:\dev\Engine\Vendor\imgui -IC:\dev\Engine\Vendor\imgui\backends
-  OBJECT_DIR = CMakeFiles\CMakeTarget.dir
-  OBJECT_FILE_DIR = CMakeFiles\CMakeTarget.dir
-  TARGET_COMPILE_PDB = CMakeFiles\CMakeTarget.dir\
-  TARGET_PDB = CMakeTarget.pdb
+  INCLUDES = -IC:\dev\Engine\Core -IC:\dev\Engine\ECS -IC:\dev\Engine\Systems -IC:\dev\Engine\Rendering -IC:\dev\Engine\Scene -IC:\dev\Engine\Editor -IC:\dev\Engine\Vendor\entt -IC:\dev\Engine\Vendor\glm -IC:\dev\Engine\Vendor\glad\include -IC:\dev\Engine\Vendor\KHR -IC:\dev\Engine\Vendor\stb -IC:\dev\Engine\Vendor\assimp\include -IC:\dev\Engine\Vendor\glfw\include -IC:\dev\Engine\Vendor\imgui -IC:\dev\Engine\Vendor\imgui\backends
+  OBJECT_DIR = CMakeFiles\GameEngine.dir
+  OBJECT_FILE_DIR = CMakeFiles\GameEngine.dir\Rendering
+  TARGET_COMPILE_PDB = CMakeFiles\GameEngine.dir\
+  TARGET_PDB = GameEngine.pdb
 
-build CMakeFiles\CMakeTarget.dir\Vendor\glad\src\glad.c.obj: C_COMPILER__CMakeTarget_unscanned_Debug C$:\dev\Engine\Vendor\glad\src\glad.c || cmake_object_order_depends_target_CMakeTarget
-  DEFINES = -DIMGUI_ENABLE_DOCKING=1
+build CMakeFiles\GameEngine.dir\Rendering\RendererLayer.cpp.obj: CXX_COMPILER__GameEngine_unscanned_Debug C$:\dev\Engine\Rendering\RendererLayer.cpp || cmake_object_order_depends_target_GameEngine
+  DEFINES = -DENGINE_EXPORTS -DIMGUI_ENABLE_DOCKING=1
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -std:c++20
+  INCLUDES = -IC:\dev\Engine\Core -IC:\dev\Engine\ECS -IC:\dev\Engine\Systems -IC:\dev\Engine\Rendering -IC:\dev\Engine\Scene -IC:\dev\Engine\Editor -IC:\dev\Engine\Vendor\entt -IC:\dev\Engine\Vendor\glm -IC:\dev\Engine\Vendor\glad\include -IC:\dev\Engine\Vendor\KHR -IC:\dev\Engine\Vendor\stb -IC:\dev\Engine\Vendor\assimp\include -IC:\dev\Engine\Vendor\glfw\include -IC:\dev\Engine\Vendor\imgui -IC:\dev\Engine\Vendor\imgui\backends
+  OBJECT_DIR = CMakeFiles\GameEngine.dir
+  OBJECT_FILE_DIR = CMakeFiles\GameEngine.dir\Rendering
+  TARGET_COMPILE_PDB = CMakeFiles\GameEngine.dir\
+  TARGET_PDB = GameEngine.pdb
+
+build CMakeFiles\GameEngine.dir\Rendering\RendererManager.cpp.obj: CXX_COMPILER__GameEngine_unscanned_Debug C$:\dev\Engine\Rendering\RendererManager.cpp || cmake_object_order_depends_target_GameEngine
+  DEFINES = -DENGINE_EXPORTS -DIMGUI_ENABLE_DOCKING=1
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -std:c++20
+  INCLUDES = -IC:\dev\Engine\Core -IC:\dev\Engine\ECS -IC:\dev\Engine\Systems -IC:\dev\Engine\Rendering -IC:\dev\Engine\Scene -IC:\dev\Engine\Editor -IC:\dev\Engine\Vendor\entt -IC:\dev\Engine\Vendor\glm -IC:\dev\Engine\Vendor\glad\include -IC:\dev\Engine\Vendor\KHR -IC:\dev\Engine\Vendor\stb -IC:\dev\Engine\Vendor\assimp\include -IC:\dev\Engine\Vendor\glfw\include -IC:\dev\Engine\Vendor\imgui -IC:\dev\Engine\Vendor\imgui\backends
+  OBJECT_DIR = CMakeFiles\GameEngine.dir
+  OBJECT_FILE_DIR = CMakeFiles\GameEngine.dir\Rendering
+  TARGET_COMPILE_PDB = CMakeFiles\GameEngine.dir\
+  TARGET_PDB = GameEngine.pdb
+
+build CMakeFiles\GameEngine.dir\Rendering\Shader.cpp.obj: CXX_COMPILER__GameEngine_unscanned_Debug C$:\dev\Engine\Rendering\Shader.cpp || cmake_object_order_depends_target_GameEngine
+  DEFINES = -DENGINE_EXPORTS -DIMGUI_ENABLE_DOCKING=1
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -std:c++20
+  INCLUDES = -IC:\dev\Engine\Core -IC:\dev\Engine\ECS -IC:\dev\Engine\Systems -IC:\dev\Engine\Rendering -IC:\dev\Engine\Scene -IC:\dev\Engine\Editor -IC:\dev\Engine\Vendor\entt -IC:\dev\Engine\Vendor\glm -IC:\dev\Engine\Vendor\glad\include -IC:\dev\Engine\Vendor\KHR -IC:\dev\Engine\Vendor\stb -IC:\dev\Engine\Vendor\assimp\include -IC:\dev\Engine\Vendor\glfw\include -IC:\dev\Engine\Vendor\imgui -IC:\dev\Engine\Vendor\imgui\backends
+  OBJECT_DIR = CMakeFiles\GameEngine.dir
+  OBJECT_FILE_DIR = CMakeFiles\GameEngine.dir\Rendering
+  TARGET_COMPILE_PDB = CMakeFiles\GameEngine.dir\
+  TARGET_PDB = GameEngine.pdb
+
+build CMakeFiles\GameEngine.dir\Rendering\ShadowMap.cpp.obj: CXX_COMPILER__GameEngine_unscanned_Debug C$:\dev\Engine\Rendering\ShadowMap.cpp || cmake_object_order_depends_target_GameEngine
+  DEFINES = -DENGINE_EXPORTS -DIMGUI_ENABLE_DOCKING=1
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -std:c++20
+  INCLUDES = -IC:\dev\Engine\Core -IC:\dev\Engine\ECS -IC:\dev\Engine\Systems -IC:\dev\Engine\Rendering -IC:\dev\Engine\Scene -IC:\dev\Engine\Editor -IC:\dev\Engine\Vendor\entt -IC:\dev\Engine\Vendor\glm -IC:\dev\Engine\Vendor\glad\include -IC:\dev\Engine\Vendor\KHR -IC:\dev\Engine\Vendor\stb -IC:\dev\Engine\Vendor\assimp\include -IC:\dev\Engine\Vendor\glfw\include -IC:\dev\Engine\Vendor\imgui -IC:\dev\Engine\Vendor\imgui\backends
+  OBJECT_DIR = CMakeFiles\GameEngine.dir
+  OBJECT_FILE_DIR = CMakeFiles\GameEngine.dir\Rendering
+  TARGET_COMPILE_PDB = CMakeFiles\GameEngine.dir\
+  TARGET_PDB = GameEngine.pdb
+
+build CMakeFiles\GameEngine.dir\Rendering\Terrain\Terrain.cpp.obj: CXX_COMPILER__GameEngine_unscanned_Debug C$:\dev\Engine\Rendering\Terrain\Terrain.cpp || cmake_object_order_depends_target_GameEngine
+  DEFINES = -DENGINE_EXPORTS -DIMGUI_ENABLE_DOCKING=1
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -std:c++20
+  INCLUDES = -IC:\dev\Engine\Core -IC:\dev\Engine\ECS -IC:\dev\Engine\Systems -IC:\dev\Engine\Rendering -IC:\dev\Engine\Scene -IC:\dev\Engine\Editor -IC:\dev\Engine\Vendor\entt -IC:\dev\Engine\Vendor\glm -IC:\dev\Engine\Vendor\glad\include -IC:\dev\Engine\Vendor\KHR -IC:\dev\Engine\Vendor\stb -IC:\dev\Engine\Vendor\assimp\include -IC:\dev\Engine\Vendor\glfw\include -IC:\dev\Engine\Vendor\imgui -IC:\dev\Engine\Vendor\imgui\backends
+  OBJECT_DIR = CMakeFiles\GameEngine.dir
+  OBJECT_FILE_DIR = CMakeFiles\GameEngine.dir\Rendering\Terrain
+  TARGET_COMPILE_PDB = CMakeFiles\GameEngine.dir\
+  TARGET_PDB = GameEngine.pdb
+
+build CMakeFiles\GameEngine.dir\Rendering\Texture.cpp.obj: CXX_COMPILER__GameEngine_unscanned_Debug C$:\dev\Engine\Rendering\Texture.cpp || cmake_object_order_depends_target_GameEngine
+  DEFINES = -DENGINE_EXPORTS -DIMGUI_ENABLE_DOCKING=1
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -std:c++20
+  INCLUDES = -IC:\dev\Engine\Core -IC:\dev\Engine\ECS -IC:\dev\Engine\Systems -IC:\dev\Engine\Rendering -IC:\dev\Engine\Scene -IC:\dev\Engine\Editor -IC:\dev\Engine\Vendor\entt -IC:\dev\Engine\Vendor\glm -IC:\dev\Engine\Vendor\glad\include -IC:\dev\Engine\Vendor\KHR -IC:\dev\Engine\Vendor\stb -IC:\dev\Engine\Vendor\assimp\include -IC:\dev\Engine\Vendor\glfw\include -IC:\dev\Engine\Vendor\imgui -IC:\dev\Engine\Vendor\imgui\backends
+  OBJECT_DIR = CMakeFiles\GameEngine.dir
+  OBJECT_FILE_DIR = CMakeFiles\GameEngine.dir\Rendering
+  TARGET_COMPILE_PDB = CMakeFiles\GameEngine.dir\
+  TARGET_PDB = GameEngine.pdb
+
+build CMakeFiles\GameEngine.dir\Scene\SceneLayer.cpp.obj: CXX_COMPILER__GameEngine_unscanned_Debug C$:\dev\Engine\Scene\SceneLayer.cpp || cmake_object_order_depends_target_GameEngine
+  DEFINES = -DENGINE_EXPORTS -DIMGUI_ENABLE_DOCKING=1
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -std:c++20
+  INCLUDES = -IC:\dev\Engine\Core -IC:\dev\Engine\ECS -IC:\dev\Engine\Systems -IC:\dev\Engine\Rendering -IC:\dev\Engine\Scene -IC:\dev\Engine\Editor -IC:\dev\Engine\Vendor\entt -IC:\dev\Engine\Vendor\glm -IC:\dev\Engine\Vendor\glad\include -IC:\dev\Engine\Vendor\KHR -IC:\dev\Engine\Vendor\stb -IC:\dev\Engine\Vendor\assimp\include -IC:\dev\Engine\Vendor\glfw\include -IC:\dev\Engine\Vendor\imgui -IC:\dev\Engine\Vendor\imgui\backends
+  OBJECT_DIR = CMakeFiles\GameEngine.dir
+  OBJECT_FILE_DIR = CMakeFiles\GameEngine.dir\Scene
+  TARGET_COMPILE_PDB = CMakeFiles\GameEngine.dir\
+  TARGET_PDB = GameEngine.pdb
+
+build CMakeFiles\GameEngine.dir\Systems\3rdPersonCameraSystem.cpp.obj: CXX_COMPILER__GameEngine_unscanned_Debug C$:\dev\Engine\Systems\3rdPersonCameraSystem.cpp || cmake_object_order_depends_target_GameEngine
+  DEFINES = -DENGINE_EXPORTS -DIMGUI_ENABLE_DOCKING=1
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -std:c++20
+  INCLUDES = -IC:\dev\Engine\Core -IC:\dev\Engine\ECS -IC:\dev\Engine\Systems -IC:\dev\Engine\Rendering -IC:\dev\Engine\Scene -IC:\dev\Engine\Editor -IC:\dev\Engine\Vendor\entt -IC:\dev\Engine\Vendor\glm -IC:\dev\Engine\Vendor\glad\include -IC:\dev\Engine\Vendor\KHR -IC:\dev\Engine\Vendor\stb -IC:\dev\Engine\Vendor\assimp\include -IC:\dev\Engine\Vendor\glfw\include -IC:\dev\Engine\Vendor\imgui -IC:\dev\Engine\Vendor\imgui\backends
+  OBJECT_DIR = CMakeFiles\GameEngine.dir
+  OBJECT_FILE_DIR = CMakeFiles\GameEngine.dir\Systems
+  TARGET_COMPILE_PDB = CMakeFiles\GameEngine.dir\
+  TARGET_PDB = GameEngine.pdb
+
+build CMakeFiles\GameEngine.dir\Systems\Camera.cpp.obj: CXX_COMPILER__GameEngine_unscanned_Debug C$:\dev\Engine\Systems\Camera.cpp || cmake_object_order_depends_target_GameEngine
+  DEFINES = -DENGINE_EXPORTS -DIMGUI_ENABLE_DOCKING=1
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -std:c++20
+  INCLUDES = -IC:\dev\Engine\Core -IC:\dev\Engine\ECS -IC:\dev\Engine\Systems -IC:\dev\Engine\Rendering -IC:\dev\Engine\Scene -IC:\dev\Engine\Editor -IC:\dev\Engine\Vendor\entt -IC:\dev\Engine\Vendor\glm -IC:\dev\Engine\Vendor\glad\include -IC:\dev\Engine\Vendor\KHR -IC:\dev\Engine\Vendor\stb -IC:\dev\Engine\Vendor\assimp\include -IC:\dev\Engine\Vendor\glfw\include -IC:\dev\Engine\Vendor\imgui -IC:\dev\Engine\Vendor\imgui\backends
+  OBJECT_DIR = CMakeFiles\GameEngine.dir
+  OBJECT_FILE_DIR = CMakeFiles\GameEngine.dir\Systems
+  TARGET_COMPILE_PDB = CMakeFiles\GameEngine.dir\
+  TARGET_PDB = GameEngine.pdb
+
+build CMakeFiles\GameEngine.dir\Systems\CameraSystem.cpp.obj: CXX_COMPILER__GameEngine_unscanned_Debug C$:\dev\Engine\Systems\CameraSystem.cpp || cmake_object_order_depends_target_GameEngine
+  DEFINES = -DENGINE_EXPORTS -DIMGUI_ENABLE_DOCKING=1
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -std:c++20
+  INCLUDES = -IC:\dev\Engine\Core -IC:\dev\Engine\ECS -IC:\dev\Engine\Systems -IC:\dev\Engine\Rendering -IC:\dev\Engine\Scene -IC:\dev\Engine\Editor -IC:\dev\Engine\Vendor\entt -IC:\dev\Engine\Vendor\glm -IC:\dev\Engine\Vendor\glad\include -IC:\dev\Engine\Vendor\KHR -IC:\dev\Engine\Vendor\stb -IC:\dev\Engine\Vendor\assimp\include -IC:\dev\Engine\Vendor\glfw\include -IC:\dev\Engine\Vendor\imgui -IC:\dev\Engine\Vendor\imgui\backends
+  OBJECT_DIR = CMakeFiles\GameEngine.dir
+  OBJECT_FILE_DIR = CMakeFiles\GameEngine.dir\Systems
+  TARGET_COMPILE_PDB = CMakeFiles\GameEngine.dir\
+  TARGET_PDB = GameEngine.pdb
+
+build CMakeFiles\GameEngine.dir\Systems\PhysicsSystem.cpp.obj: CXX_COMPILER__GameEngine_unscanned_Debug C$:\dev\Engine\Systems\PhysicsSystem.cpp || cmake_object_order_depends_target_GameEngine
+  DEFINES = -DENGINE_EXPORTS -DIMGUI_ENABLE_DOCKING=1
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -std:c++20
+  INCLUDES = -IC:\dev\Engine\Core -IC:\dev\Engine\ECS -IC:\dev\Engine\Systems -IC:\dev\Engine\Rendering -IC:\dev\Engine\Scene -IC:\dev\Engine\Editor -IC:\dev\Engine\Vendor\entt -IC:\dev\Engine\Vendor\glm -IC:\dev\Engine\Vendor\glad\include -IC:\dev\Engine\Vendor\KHR -IC:\dev\Engine\Vendor\stb -IC:\dev\Engine\Vendor\assimp\include -IC:\dev\Engine\Vendor\glfw\include -IC:\dev\Engine\Vendor\imgui -IC:\dev\Engine\Vendor\imgui\backends
+  OBJECT_DIR = CMakeFiles\GameEngine.dir
+  OBJECT_FILE_DIR = CMakeFiles\GameEngine.dir\Systems
+  TARGET_COMPILE_PDB = CMakeFiles\GameEngine.dir\
+  TARGET_PDB = GameEngine.pdb
+
+build CMakeFiles\GameEngine.dir\Systems\RenderSystem.cpp.obj: CXX_COMPILER__GameEngine_unscanned_Debug C$:\dev\Engine\Systems\RenderSystem.cpp || cmake_object_order_depends_target_GameEngine
+  DEFINES = -DENGINE_EXPORTS -DIMGUI_ENABLE_DOCKING=1
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -std:c++20
+  INCLUDES = -IC:\dev\Engine\Core -IC:\dev\Engine\ECS -IC:\dev\Engine\Systems -IC:\dev\Engine\Rendering -IC:\dev\Engine\Scene -IC:\dev\Engine\Editor -IC:\dev\Engine\Vendor\entt -IC:\dev\Engine\Vendor\glm -IC:\dev\Engine\Vendor\glad\include -IC:\dev\Engine\Vendor\KHR -IC:\dev\Engine\Vendor\stb -IC:\dev\Engine\Vendor\assimp\include -IC:\dev\Engine\Vendor\glfw\include -IC:\dev\Engine\Vendor\imgui -IC:\dev\Engine\Vendor\imgui\backends
+  OBJECT_DIR = CMakeFiles\GameEngine.dir
+  OBJECT_FILE_DIR = CMakeFiles\GameEngine.dir\Systems
+  TARGET_COMPILE_PDB = CMakeFiles\GameEngine.dir\
+  TARGET_PDB = GameEngine.pdb
+
+build CMakeFiles\GameEngine.dir\Systems\RotationSystem.cpp.obj: CXX_COMPILER__GameEngine_unscanned_Debug C$:\dev\Engine\Systems\RotationSystem.cpp || cmake_object_order_depends_target_GameEngine
+  DEFINES = -DENGINE_EXPORTS -DIMGUI_ENABLE_DOCKING=1
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -std:c++20
+  INCLUDES = -IC:\dev\Engine\Core -IC:\dev\Engine\ECS -IC:\dev\Engine\Systems -IC:\dev\Engine\Rendering -IC:\dev\Engine\Scene -IC:\dev\Engine\Editor -IC:\dev\Engine\Vendor\entt -IC:\dev\Engine\Vendor\glm -IC:\dev\Engine\Vendor\glad\include -IC:\dev\Engine\Vendor\KHR -IC:\dev\Engine\Vendor\stb -IC:\dev\Engine\Vendor\assimp\include -IC:\dev\Engine\Vendor\glfw\include -IC:\dev\Engine\Vendor\imgui -IC:\dev\Engine\Vendor\imgui\backends
+  OBJECT_DIR = CMakeFiles\GameEngine.dir
+  OBJECT_FILE_DIR = CMakeFiles\GameEngine.dir\Systems
+  TARGET_COMPILE_PDB = CMakeFiles\GameEngine.dir\
+  TARGET_PDB = GameEngine.pdb
+
+build CMakeFiles\GameEngine.dir\Vendor\glad\src\glad.c.obj: C_COMPILER__GameEngine_unscanned_Debug C$:\dev\Engine\Vendor\glad\src\glad.c || cmake_object_order_depends_target_GameEngine
+  DEFINES = -DENGINE_EXPORTS -DIMGUI_ENABLE_DOCKING=1
   FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /Ob0 /Od /RTC1
-  INCLUDES = -IC:\dev\Engine\Core -IC:\dev\Engine\Editor -IC:\dev\Engine\Renderer -IC:\dev\Engine\Scene -IC:\dev\Engine\Vendor\entt -IC:\dev\Engine\Vendor\glm -IC:\dev\Engine\Vendor\glad\include -IC:\dev\Engine\Vendor\KHR -IC:\dev\Engine\Vendor\stb -IC:\dev\Engine\Vendor\tiny_obj_loader -IC:\dev\Engine\Vendor\glfw\include -IC:\dev\Engine\Vendor\imgui -IC:\dev\Engine\Vendor\imgui\backends
-  OBJECT_DIR = CMakeFiles\CMakeTarget.dir
-  OBJECT_FILE_DIR = CMakeFiles\CMakeTarget.dir\Vendor\glad\src
-  TARGET_COMPILE_PDB = CMakeFiles\CMakeTarget.dir\
-  TARGET_PDB = CMakeTarget.pdb
+  INCLUDES = -IC:\dev\Engine\Core -IC:\dev\Engine\ECS -IC:\dev\Engine\Systems -IC:\dev\Engine\Rendering -IC:\dev\Engine\Scene -IC:\dev\Engine\Editor -IC:\dev\Engine\Vendor\entt -IC:\dev\Engine\Vendor\glm -IC:\dev\Engine\Vendor\glad\include -IC:\dev\Engine\Vendor\KHR -IC:\dev\Engine\Vendor\stb -IC:\dev\Engine\Vendor\assimp\include -IC:\dev\Engine\Vendor\glfw\include -IC:\dev\Engine\Vendor\imgui -IC:\dev\Engine\Vendor\imgui\backends
+  OBJECT_DIR = CMakeFiles\GameEngine.dir
+  OBJECT_FILE_DIR = CMakeFiles\GameEngine.dir\Vendor\glad\src
+  TARGET_COMPILE_PDB = CMakeFiles\GameEngine.dir\
+  TARGET_PDB = GameEngine.pdb
 
-build CMakeFiles\CMakeTarget.dir\Vendor\stb\stb_image.cpp.obj: CXX_COMPILER__CMakeTarget_unscanned_Debug C$:\dev\Engine\Vendor\stb\stb_image.cpp || cmake_object_order_depends_target_CMakeTarget
-  DEFINES = -DIMGUI_ENABLE_DOCKING=1
+build CMakeFiles\GameEngine.dir\Vendor\stb\stb_image.cpp.obj: CXX_COMPILER__GameEngine_unscanned_Debug C$:\dev\Engine\Vendor\stb\stb_image.cpp || cmake_object_order_depends_target_GameEngine
+  DEFINES = -DENGINE_EXPORTS -DIMGUI_ENABLE_DOCKING=1
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -std:c++20
-  INCLUDES = -IC:\dev\Engine\Core -IC:\dev\Engine\Editor -IC:\dev\Engine\Renderer -IC:\dev\Engine\Scene -IC:\dev\Engine\Vendor\entt -IC:\dev\Engine\Vendor\glm -IC:\dev\Engine\Vendor\glad\include -IC:\dev\Engine\Vendor\KHR -IC:\dev\Engine\Vendor\stb -IC:\dev\Engine\Vendor\tiny_obj_loader -IC:\dev\Engine\Vendor\glfw\include -IC:\dev\Engine\Vendor\imgui -IC:\dev\Engine\Vendor\imgui\backends
-  OBJECT_DIR = CMakeFiles\CMakeTarget.dir
-  OBJECT_FILE_DIR = CMakeFiles\CMakeTarget.dir\Vendor\stb
-  TARGET_COMPILE_PDB = CMakeFiles\CMakeTarget.dir\
-  TARGET_PDB = CMakeTarget.pdb
-
-build CMakeFiles\CMakeTarget.dir\Vendor\tiny_obj_loader\tiny_obj_loader.cpp.obj: CXX_COMPILER__CMakeTarget_unscanned_Debug C$:\dev\Engine\Vendor\tiny_obj_loader\tiny_obj_loader.cpp || cmake_object_order_depends_target_CMakeTarget
-  DEFINES = -DIMGUI_ENABLE_DOCKING=1
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -std:c++20
-  INCLUDES = -IC:\dev\Engine\Core -IC:\dev\Engine\Editor -IC:\dev\Engine\Renderer -IC:\dev\Engine\Scene -IC:\dev\Engine\Vendor\entt -IC:\dev\Engine\Vendor\glm -IC:\dev\Engine\Vendor\glad\include -IC:\dev\Engine\Vendor\KHR -IC:\dev\Engine\Vendor\stb -IC:\dev\Engine\Vendor\tiny_obj_loader -IC:\dev\Engine\Vendor\glfw\include -IC:\dev\Engine\Vendor\imgui -IC:\dev\Engine\Vendor\imgui\backends
-  OBJECT_DIR = CMakeFiles\CMakeTarget.dir
-  OBJECT_FILE_DIR = CMakeFiles\CMakeTarget.dir\Vendor\tiny_obj_loader
-  TARGET_COMPILE_PDB = CMakeFiles\CMakeTarget.dir\
-  TARGET_PDB = CMakeTarget.pdb
+  INCLUDES = -IC:\dev\Engine\Core -IC:\dev\Engine\ECS -IC:\dev\Engine\Systems -IC:\dev\Engine\Rendering -IC:\dev\Engine\Scene -IC:\dev\Engine\Editor -IC:\dev\Engine\Vendor\entt -IC:\dev\Engine\Vendor\glm -IC:\dev\Engine\Vendor\glad\include -IC:\dev\Engine\Vendor\KHR -IC:\dev\Engine\Vendor\stb -IC:\dev\Engine\Vendor\assimp\include -IC:\dev\Engine\Vendor\glfw\include -IC:\dev\Engine\Vendor\imgui -IC:\dev\Engine\Vendor\imgui\backends
+  OBJECT_DIR = CMakeFiles\GameEngine.dir
+  OBJECT_FILE_DIR = CMakeFiles\GameEngine.dir\Vendor\stb
+  TARGET_COMPILE_PDB = CMakeFiles\GameEngine.dir\
+  TARGET_PDB = GameEngine.pdb
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target CMakeTarget
+# Link build statements for EXECUTABLE target GameEngine
 
 
 #############################################
-# Link the executable CMakeTarget.exe
+# Link the executable GameEngine.exe
 
-build CMakeTarget.exe: CXX_EXECUTABLE_LINKER__CMakeTarget_Debug CMakeFiles\CMakeTarget.dir\Core\Application.cpp.obj CMakeFiles\CMakeTarget.dir\Core\CameraLayer.cpp.obj CMakeFiles\CMakeTarget.dir\Core\InputLayer.cpp.obj CMakeFiles\CMakeTarget.dir\Core\MouseInputs.cpp.obj CMakeFiles\CMakeTarget.dir\Core\TimeLayer.cpp.obj CMakeFiles\CMakeTarget.dir\Core\WindowLayer.cpp.obj CMakeFiles\CMakeTarget.dir\Renderer\Mesh.cpp.obj CMakeFiles\CMakeTarget.dir\Renderer\RendererLayer.cpp.obj CMakeFiles\CMakeTarget.dir\Renderer\Shader.cpp.obj CMakeFiles\CMakeTarget.dir\Renderer\Texture.cpp.obj CMakeFiles\CMakeTarget.dir\Scene\SceneLayer.cpp.obj CMakeFiles\CMakeTarget.dir\GameEngine.cpp.obj CMakeFiles\CMakeTarget.dir\Vendor\glad\src\glad.c.obj CMakeFiles\CMakeTarget.dir\Vendor\stb\stb_image.cpp.obj CMakeFiles\CMakeTarget.dir\Vendor\tiny_obj_loader\tiny_obj_loader.cpp.obj | Vendor\glfw\src\glfw3.lib Vendor\imgui\ImGui.lib Vendor\glfw\src\glfw3.lib || Vendor\glfw\src\glfw3.lib Vendor\imgui\ImGui.lib
+build GameEngine.exe: CXX_EXECUTABLE_LINKER__GameEngine_Debug CMakeFiles\GameEngine.dir\Core\Application.cpp.obj CMakeFiles\GameEngine.dir\Core\GameTime.cpp.obj CMakeFiles\GameEngine.dir\Core\Input.cpp.obj CMakeFiles\GameEngine.dir\Core\InputLayer.cpp.obj CMakeFiles\GameEngine.dir\Core\WindowLayer.cpp.obj CMakeFiles\GameEngine.dir\ECS\SystemManager.cpp.obj CMakeFiles\GameEngine.dir\Editor\UILayer.cpp.obj CMakeFiles\GameEngine.dir\GameEngine.cpp.obj CMakeFiles\GameEngine.dir\Rendering\Material.cpp.obj CMakeFiles\GameEngine.dir\Rendering\Mesh.cpp.obj CMakeFiles\GameEngine.dir\Rendering\MeshRenderer.cpp.obj CMakeFiles\GameEngine.dir\Rendering\Model.cpp.obj CMakeFiles\GameEngine.dir\Rendering\RendererLayer.cpp.obj CMakeFiles\GameEngine.dir\Rendering\RendererManager.cpp.obj CMakeFiles\GameEngine.dir\Rendering\Shader.cpp.obj CMakeFiles\GameEngine.dir\Rendering\ShadowMap.cpp.obj CMakeFiles\GameEngine.dir\Rendering\Terrain\Terrain.cpp.obj CMakeFiles\GameEngine.dir\Rendering\Texture.cpp.obj CMakeFiles\GameEngine.dir\Scene\SceneLayer.cpp.obj CMakeFiles\GameEngine.dir\Systems\3rdPersonCameraSystem.cpp.obj CMakeFiles\GameEngine.dir\Systems\Camera.cpp.obj CMakeFiles\GameEngine.dir\Systems\CameraSystem.cpp.obj CMakeFiles\GameEngine.dir\Systems\PhysicsSystem.cpp.obj CMakeFiles\GameEngine.dir\Systems\RenderSystem.cpp.obj CMakeFiles\GameEngine.dir\Systems\RotationSystem.cpp.obj CMakeFiles\GameEngine.dir\Vendor\glad\src\glad.c.obj CMakeFiles\GameEngine.dir\Vendor\stb\stb_image.cpp.obj | lib\glfw3_Debug.lib lib\ImGui_Debug.lib lib\glfw3_Debug.lib || lib\ImGui_Debug.lib lib\glfw3_Debug.lib
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1
   LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
-  LINK_LIBRARIES = Vendor\glfw\src\glfw3.lib  Vendor\imgui\ImGui.lib  opengl32.lib  Vendor\glfw\src\glfw3.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
-  OBJECT_DIR = CMakeFiles\CMakeTarget.dir
+  LINK_LIBRARIES = lib\glfw3_Debug.lib  lib\ImGui_Debug.lib  assimp-vc143-mt.lib  opengl32.lib  lib\glfw3_Debug.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  LINK_PATH = -LIBPATH:C:\dev\Engine\Vendor\assimp\lib
+  OBJECT_DIR = CMakeFiles\GameEngine.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\CMakeTarget.dir\
-  TARGET_FILE = CMakeTarget.exe
-  TARGET_IMPLIB = CMakeTarget.lib
-  TARGET_PDB = CMakeTarget.pdb
+  TARGET_COMPILE_PDB = CMakeFiles\GameEngine.dir\
+  TARGET_FILE = GameEngine.exe
+  TARGET_IMPLIB = GameEngine.lib
+  TARGET_PDB = GameEngine.pdb
 
 
 #############################################
@@ -276,7 +385,7 @@ build Vendor\glfw\src\CMakeFiles\glfw.dir\context.c.obj: C_COMPILER__glfw_unscan
   OBJECT_DIR = Vendor\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = Vendor\glfw\src\CMakeFiles\glfw.dir
   TARGET_COMPILE_PDB = Vendor\glfw\src\CMakeFiles\glfw.dir\glfw.pdb
-  TARGET_PDB = Vendor\glfw\src\glfw3.pdb
+  TARGET_PDB = lib\glfw3_Debug.pdb
 
 build Vendor\glfw\src\CMakeFiles\glfw.dir\init.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\dev\Engine\Vendor\glfw\src\init.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
@@ -285,7 +394,7 @@ build Vendor\glfw\src\CMakeFiles\glfw.dir\init.c.obj: C_COMPILER__glfw_unscanned
   OBJECT_DIR = Vendor\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = Vendor\glfw\src\CMakeFiles\glfw.dir
   TARGET_COMPILE_PDB = Vendor\glfw\src\CMakeFiles\glfw.dir\glfw.pdb
-  TARGET_PDB = Vendor\glfw\src\glfw3.pdb
+  TARGET_PDB = lib\glfw3_Debug.pdb
 
 build Vendor\glfw\src\CMakeFiles\glfw.dir\input.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\dev\Engine\Vendor\glfw\src\input.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
@@ -294,7 +403,7 @@ build Vendor\glfw\src\CMakeFiles\glfw.dir\input.c.obj: C_COMPILER__glfw_unscanne
   OBJECT_DIR = Vendor\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = Vendor\glfw\src\CMakeFiles\glfw.dir
   TARGET_COMPILE_PDB = Vendor\glfw\src\CMakeFiles\glfw.dir\glfw.pdb
-  TARGET_PDB = Vendor\glfw\src\glfw3.pdb
+  TARGET_PDB = lib\glfw3_Debug.pdb
 
 build Vendor\glfw\src\CMakeFiles\glfw.dir\monitor.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\dev\Engine\Vendor\glfw\src\monitor.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
@@ -303,7 +412,7 @@ build Vendor\glfw\src\CMakeFiles\glfw.dir\monitor.c.obj: C_COMPILER__glfw_unscan
   OBJECT_DIR = Vendor\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = Vendor\glfw\src\CMakeFiles\glfw.dir
   TARGET_COMPILE_PDB = Vendor\glfw\src\CMakeFiles\glfw.dir\glfw.pdb
-  TARGET_PDB = Vendor\glfw\src\glfw3.pdb
+  TARGET_PDB = lib\glfw3_Debug.pdb
 
 build Vendor\glfw\src\CMakeFiles\glfw.dir\platform.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\dev\Engine\Vendor\glfw\src\platform.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
@@ -312,7 +421,7 @@ build Vendor\glfw\src\CMakeFiles\glfw.dir\platform.c.obj: C_COMPILER__glfw_unsca
   OBJECT_DIR = Vendor\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = Vendor\glfw\src\CMakeFiles\glfw.dir
   TARGET_COMPILE_PDB = Vendor\glfw\src\CMakeFiles\glfw.dir\glfw.pdb
-  TARGET_PDB = Vendor\glfw\src\glfw3.pdb
+  TARGET_PDB = lib\glfw3_Debug.pdb
 
 build Vendor\glfw\src\CMakeFiles\glfw.dir\vulkan.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\dev\Engine\Vendor\glfw\src\vulkan.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
@@ -321,7 +430,7 @@ build Vendor\glfw\src\CMakeFiles\glfw.dir\vulkan.c.obj: C_COMPILER__glfw_unscann
   OBJECT_DIR = Vendor\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = Vendor\glfw\src\CMakeFiles\glfw.dir
   TARGET_COMPILE_PDB = Vendor\glfw\src\CMakeFiles\glfw.dir\glfw.pdb
-  TARGET_PDB = Vendor\glfw\src\glfw3.pdb
+  TARGET_PDB = lib\glfw3_Debug.pdb
 
 build Vendor\glfw\src\CMakeFiles\glfw.dir\window.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\dev\Engine\Vendor\glfw\src\window.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
@@ -330,7 +439,7 @@ build Vendor\glfw\src\CMakeFiles\glfw.dir\window.c.obj: C_COMPILER__glfw_unscann
   OBJECT_DIR = Vendor\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = Vendor\glfw\src\CMakeFiles\glfw.dir
   TARGET_COMPILE_PDB = Vendor\glfw\src\CMakeFiles\glfw.dir\glfw.pdb
-  TARGET_PDB = Vendor\glfw\src\glfw3.pdb
+  TARGET_PDB = lib\glfw3_Debug.pdb
 
 build Vendor\glfw\src\CMakeFiles\glfw.dir\egl_context.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\dev\Engine\Vendor\glfw\src\egl_context.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
@@ -339,7 +448,7 @@ build Vendor\glfw\src\CMakeFiles\glfw.dir\egl_context.c.obj: C_COMPILER__glfw_un
   OBJECT_DIR = Vendor\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = Vendor\glfw\src\CMakeFiles\glfw.dir
   TARGET_COMPILE_PDB = Vendor\glfw\src\CMakeFiles\glfw.dir\glfw.pdb
-  TARGET_PDB = Vendor\glfw\src\glfw3.pdb
+  TARGET_PDB = lib\glfw3_Debug.pdb
 
 build Vendor\glfw\src\CMakeFiles\glfw.dir\osmesa_context.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\dev\Engine\Vendor\glfw\src\osmesa_context.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
@@ -348,7 +457,7 @@ build Vendor\glfw\src\CMakeFiles\glfw.dir\osmesa_context.c.obj: C_COMPILER__glfw
   OBJECT_DIR = Vendor\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = Vendor\glfw\src\CMakeFiles\glfw.dir
   TARGET_COMPILE_PDB = Vendor\glfw\src\CMakeFiles\glfw.dir\glfw.pdb
-  TARGET_PDB = Vendor\glfw\src\glfw3.pdb
+  TARGET_PDB = lib\glfw3_Debug.pdb
 
 build Vendor\glfw\src\CMakeFiles\glfw.dir\null_init.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\dev\Engine\Vendor\glfw\src\null_init.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
@@ -357,7 +466,7 @@ build Vendor\glfw\src\CMakeFiles\glfw.dir\null_init.c.obj: C_COMPILER__glfw_unsc
   OBJECT_DIR = Vendor\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = Vendor\glfw\src\CMakeFiles\glfw.dir
   TARGET_COMPILE_PDB = Vendor\glfw\src\CMakeFiles\glfw.dir\glfw.pdb
-  TARGET_PDB = Vendor\glfw\src\glfw3.pdb
+  TARGET_PDB = lib\glfw3_Debug.pdb
 
 build Vendor\glfw\src\CMakeFiles\glfw.dir\null_monitor.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\dev\Engine\Vendor\glfw\src\null_monitor.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
@@ -366,7 +475,7 @@ build Vendor\glfw\src\CMakeFiles\glfw.dir\null_monitor.c.obj: C_COMPILER__glfw_u
   OBJECT_DIR = Vendor\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = Vendor\glfw\src\CMakeFiles\glfw.dir
   TARGET_COMPILE_PDB = Vendor\glfw\src\CMakeFiles\glfw.dir\glfw.pdb
-  TARGET_PDB = Vendor\glfw\src\glfw3.pdb
+  TARGET_PDB = lib\glfw3_Debug.pdb
 
 build Vendor\glfw\src\CMakeFiles\glfw.dir\null_window.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\dev\Engine\Vendor\glfw\src\null_window.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
@@ -375,7 +484,7 @@ build Vendor\glfw\src\CMakeFiles\glfw.dir\null_window.c.obj: C_COMPILER__glfw_un
   OBJECT_DIR = Vendor\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = Vendor\glfw\src\CMakeFiles\glfw.dir
   TARGET_COMPILE_PDB = Vendor\glfw\src\CMakeFiles\glfw.dir\glfw.pdb
-  TARGET_PDB = Vendor\glfw\src\glfw3.pdb
+  TARGET_PDB = lib\glfw3_Debug.pdb
 
 build Vendor\glfw\src\CMakeFiles\glfw.dir\null_joystick.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\dev\Engine\Vendor\glfw\src\null_joystick.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
@@ -384,7 +493,7 @@ build Vendor\glfw\src\CMakeFiles\glfw.dir\null_joystick.c.obj: C_COMPILER__glfw_
   OBJECT_DIR = Vendor\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = Vendor\glfw\src\CMakeFiles\glfw.dir
   TARGET_COMPILE_PDB = Vendor\glfw\src\CMakeFiles\glfw.dir\glfw.pdb
-  TARGET_PDB = Vendor\glfw\src\glfw3.pdb
+  TARGET_PDB = lib\glfw3_Debug.pdb
 
 build Vendor\glfw\src\CMakeFiles\glfw.dir\win32_module.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\dev\Engine\Vendor\glfw\src\win32_module.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
@@ -393,7 +502,7 @@ build Vendor\glfw\src\CMakeFiles\glfw.dir\win32_module.c.obj: C_COMPILER__glfw_u
   OBJECT_DIR = Vendor\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = Vendor\glfw\src\CMakeFiles\glfw.dir
   TARGET_COMPILE_PDB = Vendor\glfw\src\CMakeFiles\glfw.dir\glfw.pdb
-  TARGET_PDB = Vendor\glfw\src\glfw3.pdb
+  TARGET_PDB = lib\glfw3_Debug.pdb
 
 build Vendor\glfw\src\CMakeFiles\glfw.dir\win32_time.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\dev\Engine\Vendor\glfw\src\win32_time.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
@@ -402,7 +511,7 @@ build Vendor\glfw\src\CMakeFiles\glfw.dir\win32_time.c.obj: C_COMPILER__glfw_uns
   OBJECT_DIR = Vendor\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = Vendor\glfw\src\CMakeFiles\glfw.dir
   TARGET_COMPILE_PDB = Vendor\glfw\src\CMakeFiles\glfw.dir\glfw.pdb
-  TARGET_PDB = Vendor\glfw\src\glfw3.pdb
+  TARGET_PDB = lib\glfw3_Debug.pdb
 
 build Vendor\glfw\src\CMakeFiles\glfw.dir\win32_thread.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\dev\Engine\Vendor\glfw\src\win32_thread.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
@@ -411,7 +520,7 @@ build Vendor\glfw\src\CMakeFiles\glfw.dir\win32_thread.c.obj: C_COMPILER__glfw_u
   OBJECT_DIR = Vendor\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = Vendor\glfw\src\CMakeFiles\glfw.dir
   TARGET_COMPILE_PDB = Vendor\glfw\src\CMakeFiles\glfw.dir\glfw.pdb
-  TARGET_PDB = Vendor\glfw\src\glfw3.pdb
+  TARGET_PDB = lib\glfw3_Debug.pdb
 
 build Vendor\glfw\src\CMakeFiles\glfw.dir\win32_init.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\dev\Engine\Vendor\glfw\src\win32_init.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
@@ -420,7 +529,7 @@ build Vendor\glfw\src\CMakeFiles\glfw.dir\win32_init.c.obj: C_COMPILER__glfw_uns
   OBJECT_DIR = Vendor\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = Vendor\glfw\src\CMakeFiles\glfw.dir
   TARGET_COMPILE_PDB = Vendor\glfw\src\CMakeFiles\glfw.dir\glfw.pdb
-  TARGET_PDB = Vendor\glfw\src\glfw3.pdb
+  TARGET_PDB = lib\glfw3_Debug.pdb
 
 build Vendor\glfw\src\CMakeFiles\glfw.dir\win32_joystick.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\dev\Engine\Vendor\glfw\src\win32_joystick.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
@@ -429,7 +538,7 @@ build Vendor\glfw\src\CMakeFiles\glfw.dir\win32_joystick.c.obj: C_COMPILER__glfw
   OBJECT_DIR = Vendor\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = Vendor\glfw\src\CMakeFiles\glfw.dir
   TARGET_COMPILE_PDB = Vendor\glfw\src\CMakeFiles\glfw.dir\glfw.pdb
-  TARGET_PDB = Vendor\glfw\src\glfw3.pdb
+  TARGET_PDB = lib\glfw3_Debug.pdb
 
 build Vendor\glfw\src\CMakeFiles\glfw.dir\win32_monitor.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\dev\Engine\Vendor\glfw\src\win32_monitor.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
@@ -438,7 +547,7 @@ build Vendor\glfw\src\CMakeFiles\glfw.dir\win32_monitor.c.obj: C_COMPILER__glfw_
   OBJECT_DIR = Vendor\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = Vendor\glfw\src\CMakeFiles\glfw.dir
   TARGET_COMPILE_PDB = Vendor\glfw\src\CMakeFiles\glfw.dir\glfw.pdb
-  TARGET_PDB = Vendor\glfw\src\glfw3.pdb
+  TARGET_PDB = lib\glfw3_Debug.pdb
 
 build Vendor\glfw\src\CMakeFiles\glfw.dir\win32_window.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\dev\Engine\Vendor\glfw\src\win32_window.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
@@ -447,7 +556,7 @@ build Vendor\glfw\src\CMakeFiles\glfw.dir\win32_window.c.obj: C_COMPILER__glfw_u
   OBJECT_DIR = Vendor\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = Vendor\glfw\src\CMakeFiles\glfw.dir
   TARGET_COMPILE_PDB = Vendor\glfw\src\CMakeFiles\glfw.dir\glfw.pdb
-  TARGET_PDB = Vendor\glfw\src\glfw3.pdb
+  TARGET_PDB = lib\glfw3_Debug.pdb
 
 build Vendor\glfw\src\CMakeFiles\glfw.dir\wgl_context.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\dev\Engine\Vendor\glfw\src\wgl_context.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
@@ -456,7 +565,7 @@ build Vendor\glfw\src\CMakeFiles\glfw.dir\wgl_context.c.obj: C_COMPILER__glfw_un
   OBJECT_DIR = Vendor\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = Vendor\glfw\src\CMakeFiles\glfw.dir
   TARGET_COMPILE_PDB = Vendor\glfw\src\CMakeFiles\glfw.dir\glfw.pdb
-  TARGET_PDB = Vendor\glfw\src\glfw3.pdb
+  TARGET_PDB = lib\glfw3_Debug.pdb
 
 
 # =============================================================================
@@ -464,17 +573,17 @@ build Vendor\glfw\src\CMakeFiles\glfw.dir\wgl_context.c.obj: C_COMPILER__glfw_un
 
 
 #############################################
-# Link the static library Vendor\glfw\src\glfw3.lib
+# Link the static library lib\glfw3_Debug.lib
 
-build Vendor\glfw\src\glfw3.lib: C_STATIC_LIBRARY_LINKER__glfw_Debug Vendor\glfw\src\CMakeFiles\glfw.dir\context.c.obj Vendor\glfw\src\CMakeFiles\glfw.dir\init.c.obj Vendor\glfw\src\CMakeFiles\glfw.dir\input.c.obj Vendor\glfw\src\CMakeFiles\glfw.dir\monitor.c.obj Vendor\glfw\src\CMakeFiles\glfw.dir\platform.c.obj Vendor\glfw\src\CMakeFiles\glfw.dir\vulkan.c.obj Vendor\glfw\src\CMakeFiles\glfw.dir\window.c.obj Vendor\glfw\src\CMakeFiles\glfw.dir\egl_context.c.obj Vendor\glfw\src\CMakeFiles\glfw.dir\osmesa_context.c.obj Vendor\glfw\src\CMakeFiles\glfw.dir\null_init.c.obj Vendor\glfw\src\CMakeFiles\glfw.dir\null_monitor.c.obj Vendor\glfw\src\CMakeFiles\glfw.dir\null_window.c.obj Vendor\glfw\src\CMakeFiles\glfw.dir\null_joystick.c.obj Vendor\glfw\src\CMakeFiles\glfw.dir\win32_module.c.obj Vendor\glfw\src\CMakeFiles\glfw.dir\win32_time.c.obj Vendor\glfw\src\CMakeFiles\glfw.dir\win32_thread.c.obj Vendor\glfw\src\CMakeFiles\glfw.dir\win32_init.c.obj Vendor\glfw\src\CMakeFiles\glfw.dir\win32_joystick.c.obj Vendor\glfw\src\CMakeFiles\glfw.dir\win32_monitor.c.obj Vendor\glfw\src\CMakeFiles\glfw.dir\win32_window.c.obj Vendor\glfw\src\CMakeFiles\glfw.dir\wgl_context.c.obj
+build lib\glfw3_Debug.lib: C_STATIC_LIBRARY_LINKER__glfw_Debug Vendor\glfw\src\CMakeFiles\glfw.dir\context.c.obj Vendor\glfw\src\CMakeFiles\glfw.dir\init.c.obj Vendor\glfw\src\CMakeFiles\glfw.dir\input.c.obj Vendor\glfw\src\CMakeFiles\glfw.dir\monitor.c.obj Vendor\glfw\src\CMakeFiles\glfw.dir\platform.c.obj Vendor\glfw\src\CMakeFiles\glfw.dir\vulkan.c.obj Vendor\glfw\src\CMakeFiles\glfw.dir\window.c.obj Vendor\glfw\src\CMakeFiles\glfw.dir\egl_context.c.obj Vendor\glfw\src\CMakeFiles\glfw.dir\osmesa_context.c.obj Vendor\glfw\src\CMakeFiles\glfw.dir\null_init.c.obj Vendor\glfw\src\CMakeFiles\glfw.dir\null_monitor.c.obj Vendor\glfw\src\CMakeFiles\glfw.dir\null_window.c.obj Vendor\glfw\src\CMakeFiles\glfw.dir\null_joystick.c.obj Vendor\glfw\src\CMakeFiles\glfw.dir\win32_module.c.obj Vendor\glfw\src\CMakeFiles\glfw.dir\win32_time.c.obj Vendor\glfw\src\CMakeFiles\glfw.dir\win32_thread.c.obj Vendor\glfw\src\CMakeFiles\glfw.dir\win32_init.c.obj Vendor\glfw\src\CMakeFiles\glfw.dir\win32_joystick.c.obj Vendor\glfw\src\CMakeFiles\glfw.dir\win32_monitor.c.obj Vendor\glfw\src\CMakeFiles\glfw.dir\win32_window.c.obj Vendor\glfw\src\CMakeFiles\glfw.dir\wgl_context.c.obj
   LANGUAGE_COMPILE_FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /Ob0 /Od /RTC1
   LINK_FLAGS = /machine:x64
   OBJECT_DIR = Vendor\glfw\src\CMakeFiles\glfw.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
   TARGET_COMPILE_PDB = Vendor\glfw\src\CMakeFiles\glfw.dir\glfw.pdb
-  TARGET_FILE = Vendor\glfw\src\glfw3.lib
-  TARGET_PDB = Vendor\glfw\src\glfw3.pdb
+  TARGET_FILE = lib\glfw3_Debug.lib
+  TARGET_PDB = lib\glfw3_Debug.pdb
 
 
 #############################################
@@ -534,7 +643,7 @@ build Vendor\imgui\CMakeFiles\ImGui.dir\imgui.cpp.obj: CXX_COMPILER__ImGui_unsca
   OBJECT_DIR = Vendor\imgui\CMakeFiles\ImGui.dir
   OBJECT_FILE_DIR = Vendor\imgui\CMakeFiles\ImGui.dir
   TARGET_COMPILE_PDB = Vendor\imgui\CMakeFiles\ImGui.dir\ImGui.pdb
-  TARGET_PDB = Vendor\imgui\ImGui.pdb
+  TARGET_PDB = lib\ImGui_Debug.pdb
 
 build Vendor\imgui\CMakeFiles\ImGui.dir\imgui_demo.cpp.obj: CXX_COMPILER__ImGui_unscanned_Debug C$:\dev\Engine\Vendor\imgui\imgui_demo.cpp || cmake_object_order_depends_target_ImGui
   DEFINES = -DIMGUI_ENABLE_DOCKING=1
@@ -543,7 +652,7 @@ build Vendor\imgui\CMakeFiles\ImGui.dir\imgui_demo.cpp.obj: CXX_COMPILER__ImGui_
   OBJECT_DIR = Vendor\imgui\CMakeFiles\ImGui.dir
   OBJECT_FILE_DIR = Vendor\imgui\CMakeFiles\ImGui.dir
   TARGET_COMPILE_PDB = Vendor\imgui\CMakeFiles\ImGui.dir\ImGui.pdb
-  TARGET_PDB = Vendor\imgui\ImGui.pdb
+  TARGET_PDB = lib\ImGui_Debug.pdb
 
 build Vendor\imgui\CMakeFiles\ImGui.dir\imgui_draw.cpp.obj: CXX_COMPILER__ImGui_unscanned_Debug C$:\dev\Engine\Vendor\imgui\imgui_draw.cpp || cmake_object_order_depends_target_ImGui
   DEFINES = -DIMGUI_ENABLE_DOCKING=1
@@ -552,7 +661,7 @@ build Vendor\imgui\CMakeFiles\ImGui.dir\imgui_draw.cpp.obj: CXX_COMPILER__ImGui_
   OBJECT_DIR = Vendor\imgui\CMakeFiles\ImGui.dir
   OBJECT_FILE_DIR = Vendor\imgui\CMakeFiles\ImGui.dir
   TARGET_COMPILE_PDB = Vendor\imgui\CMakeFiles\ImGui.dir\ImGui.pdb
-  TARGET_PDB = Vendor\imgui\ImGui.pdb
+  TARGET_PDB = lib\ImGui_Debug.pdb
 
 build Vendor\imgui\CMakeFiles\ImGui.dir\imgui_tables.cpp.obj: CXX_COMPILER__ImGui_unscanned_Debug C$:\dev\Engine\Vendor\imgui\imgui_tables.cpp || cmake_object_order_depends_target_ImGui
   DEFINES = -DIMGUI_ENABLE_DOCKING=1
@@ -561,7 +670,7 @@ build Vendor\imgui\CMakeFiles\ImGui.dir\imgui_tables.cpp.obj: CXX_COMPILER__ImGu
   OBJECT_DIR = Vendor\imgui\CMakeFiles\ImGui.dir
   OBJECT_FILE_DIR = Vendor\imgui\CMakeFiles\ImGui.dir
   TARGET_COMPILE_PDB = Vendor\imgui\CMakeFiles\ImGui.dir\ImGui.pdb
-  TARGET_PDB = Vendor\imgui\ImGui.pdb
+  TARGET_PDB = lib\ImGui_Debug.pdb
 
 build Vendor\imgui\CMakeFiles\ImGui.dir\imgui_widgets.cpp.obj: CXX_COMPILER__ImGui_unscanned_Debug C$:\dev\Engine\Vendor\imgui\imgui_widgets.cpp || cmake_object_order_depends_target_ImGui
   DEFINES = -DIMGUI_ENABLE_DOCKING=1
@@ -570,7 +679,7 @@ build Vendor\imgui\CMakeFiles\ImGui.dir\imgui_widgets.cpp.obj: CXX_COMPILER__ImG
   OBJECT_DIR = Vendor\imgui\CMakeFiles\ImGui.dir
   OBJECT_FILE_DIR = Vendor\imgui\CMakeFiles\ImGui.dir
   TARGET_COMPILE_PDB = Vendor\imgui\CMakeFiles\ImGui.dir\ImGui.pdb
-  TARGET_PDB = Vendor\imgui\ImGui.pdb
+  TARGET_PDB = lib\ImGui_Debug.pdb
 
 build Vendor\imgui\CMakeFiles\ImGui.dir\backends\imgui_impl_glfw.cpp.obj: CXX_COMPILER__ImGui_unscanned_Debug C$:\dev\Engine\Vendor\imgui\backends\imgui_impl_glfw.cpp || cmake_object_order_depends_target_ImGui
   DEFINES = -DIMGUI_ENABLE_DOCKING=1
@@ -579,7 +688,7 @@ build Vendor\imgui\CMakeFiles\ImGui.dir\backends\imgui_impl_glfw.cpp.obj: CXX_CO
   OBJECT_DIR = Vendor\imgui\CMakeFiles\ImGui.dir
   OBJECT_FILE_DIR = Vendor\imgui\CMakeFiles\ImGui.dir\backends
   TARGET_COMPILE_PDB = Vendor\imgui\CMakeFiles\ImGui.dir\ImGui.pdb
-  TARGET_PDB = Vendor\imgui\ImGui.pdb
+  TARGET_PDB = lib\ImGui_Debug.pdb
 
 build Vendor\imgui\CMakeFiles\ImGui.dir\backends\imgui_impl_opengl3.cpp.obj: CXX_COMPILER__ImGui_unscanned_Debug C$:\dev\Engine\Vendor\imgui\backends\imgui_impl_opengl3.cpp || cmake_object_order_depends_target_ImGui
   DEFINES = -DIMGUI_ENABLE_DOCKING=1
@@ -588,7 +697,7 @@ build Vendor\imgui\CMakeFiles\ImGui.dir\backends\imgui_impl_opengl3.cpp.obj: CXX
   OBJECT_DIR = Vendor\imgui\CMakeFiles\ImGui.dir
   OBJECT_FILE_DIR = Vendor\imgui\CMakeFiles\ImGui.dir\backends
   TARGET_COMPILE_PDB = Vendor\imgui\CMakeFiles\ImGui.dir\ImGui.pdb
-  TARGET_PDB = Vendor\imgui\ImGui.pdb
+  TARGET_PDB = lib\ImGui_Debug.pdb
 
 
 # =============================================================================
@@ -596,17 +705,17 @@ build Vendor\imgui\CMakeFiles\ImGui.dir\backends\imgui_impl_opengl3.cpp.obj: CXX
 
 
 #############################################
-# Link the static library Vendor\imgui\ImGui.lib
+# Link the static library lib\ImGui_Debug.lib
 
-build Vendor\imgui\ImGui.lib: CXX_STATIC_LIBRARY_LINKER__ImGui_Debug Vendor\imgui\CMakeFiles\ImGui.dir\imgui.cpp.obj Vendor\imgui\CMakeFiles\ImGui.dir\imgui_demo.cpp.obj Vendor\imgui\CMakeFiles\ImGui.dir\imgui_draw.cpp.obj Vendor\imgui\CMakeFiles\ImGui.dir\imgui_tables.cpp.obj Vendor\imgui\CMakeFiles\ImGui.dir\imgui_widgets.cpp.obj Vendor\imgui\CMakeFiles\ImGui.dir\backends\imgui_impl_glfw.cpp.obj Vendor\imgui\CMakeFiles\ImGui.dir\backends\imgui_impl_opengl3.cpp.obj || Vendor\glfw\src\glfw3.lib
+build lib\ImGui_Debug.lib: CXX_STATIC_LIBRARY_LINKER__ImGui_Debug Vendor\imgui\CMakeFiles\ImGui.dir\imgui.cpp.obj Vendor\imgui\CMakeFiles\ImGui.dir\imgui_demo.cpp.obj Vendor\imgui\CMakeFiles\ImGui.dir\imgui_draw.cpp.obj Vendor\imgui\CMakeFiles\ImGui.dir\imgui_tables.cpp.obj Vendor\imgui\CMakeFiles\ImGui.dir\imgui_widgets.cpp.obj Vendor\imgui\CMakeFiles\ImGui.dir\backends\imgui_impl_glfw.cpp.obj Vendor\imgui\CMakeFiles\ImGui.dir\backends\imgui_impl_opengl3.cpp.obj || lib\glfw3_Debug.lib
   LANGUAGE_COMPILE_FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1
   LINK_FLAGS = /machine:x64
   OBJECT_DIR = Vendor\imgui\CMakeFiles\ImGui.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
   TARGET_COMPILE_PDB = Vendor\imgui\CMakeFiles\ImGui.dir\ImGui.pdb
-  TARGET_FILE = Vendor\imgui\ImGui.lib
-  TARGET_PDB = Vendor\imgui\ImGui.pdb
+  TARGET_FILE = lib\ImGui_Debug.lib
+  TARGET_PDB = lib\ImGui_Debug.pdb
 
 
 #############################################
@@ -634,15 +743,15 @@ build Vendor\imgui\rebuild_cache: phony Vendor\imgui\CMakeFiles\rebuild_cache.ut
 # =============================================================================
 # Target aliases.
 
-build CMakeTarget: phony CMakeTarget.exe
+build GameEngine: phony GameEngine.exe
 
-build ImGui: phony Vendor\imgui\ImGui.lib
+build ImGui: phony lib\ImGui_Debug.lib
 
-build ImGui.lib: phony Vendor\imgui\ImGui.lib
+build ImGui_Debug.lib: phony lib\ImGui_Debug.lib
 
-build glfw: phony Vendor\glfw\src\glfw3.lib
+build glfw: phony lib\glfw3_Debug.lib
 
-build glfw3.lib: phony Vendor\glfw\src\glfw3.lib
+build glfw3_Debug.lib: phony lib\glfw3_Debug.lib
 
 build update_mappings: phony Vendor\glfw\src\update_mappings
 
@@ -654,7 +763,7 @@ build update_mappings: phony Vendor\glfw\src\update_mappings
 #############################################
 # Folder: C:/dev/Engine/out/build/x64-debug
 
-build all: phony CMakeTarget.exe Vendor\glfw\all Vendor\imgui\all
+build all: phony GameEngine.exe Vendor\glfw\all Vendor\imgui\all
 
 # =============================================================================
 
@@ -668,14 +777,14 @@ build Vendor\glfw\all: phony Vendor\glfw\src\all
 #############################################
 # Folder: C:/dev/Engine/out/build/x64-debug/Vendor/glfw/src
 
-build Vendor\glfw\src\all: phony Vendor\glfw\src\glfw3.lib
+build Vendor\glfw\src\all: phony lib\glfw3_Debug.lib
 
 # =============================================================================
 
 #############################################
 # Folder: C:/dev/Engine/out/build/x64-debug/Vendor/imgui
 
-build Vendor\imgui\all: phony Vendor\imgui\ImGui.lib
+build Vendor\imgui\all: phony lib\ImGui_Debug.lib
 
 # =============================================================================
 # Built-in targets

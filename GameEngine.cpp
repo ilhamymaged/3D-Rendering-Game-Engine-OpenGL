@@ -1,7 +1,7 @@
 #include <Application.h>
 
-int main() 
+int main()
 {
-    Application app("3D Engine", 1280, 720);
-    app.run();
+	Application app("App", 1600, 900);
+	app.run();
 }

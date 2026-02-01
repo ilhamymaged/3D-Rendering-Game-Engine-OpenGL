@@ -1,0 +1,549 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "GameEngine.exe"
+		},
+		{
+			"path" : "GameEngine.pdb"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_executable",
+			"target_link_directories",
+			"target_link_libraries",
+			"target_compile_definitions",
+			"target_include_directories"
+		],
+		"files" : 
+		[
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 39,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 68,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 72,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 83,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 82,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 48,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "/DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -std:c++20"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 5,
+					"define" : "ENGINE_EXPORTS"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "IMGUI_ENABLE_DOCKING=1"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 6,
+					"path" : "C:/dev/Engine/Core"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "C:/dev/Engine/ECS"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "C:/dev/Engine/Systems"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "C:/dev/Engine/Rendering"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "C:/dev/Engine/Scene"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "C:/dev/Engine/Editor"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "C:/dev/Engine/Vendor/entt"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "C:/dev/Engine/Vendor/glm"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "C:/dev/Engine/Vendor/glad/include"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "C:/dev/Engine/Vendor/KHR"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "C:/dev/Engine/Vendor/stb"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "C:/dev/Engine/Vendor/assimp/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/dev/Engine/Vendor/glfw/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/dev/Engine/Vendor/imgui"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/dev/Engine/Vendor/imgui/backends"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					1
+				],
+				"standard" : "20"
+			},
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22,
+				23,
+				24,
+				26
+			]
+		},
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "/DWIN32 /D_WINDOWS /W3 /MDd /Ob0 /Od /RTC1"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 5,
+					"define" : "ENGINE_EXPORTS"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "IMGUI_ENABLE_DOCKING=1"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 6,
+					"path" : "C:/dev/Engine/Core"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "C:/dev/Engine/ECS"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "C:/dev/Engine/Systems"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "C:/dev/Engine/Rendering"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "C:/dev/Engine/Scene"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "C:/dev/Engine/Editor"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "C:/dev/Engine/Vendor/entt"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "C:/dev/Engine/Vendor/glm"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "C:/dev/Engine/Vendor/glad/include"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "C:/dev/Engine/Vendor/KHR"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "C:/dev/Engine/Vendor/stb"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "C:/dev/Engine/Vendor/assimp/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/dev/Engine/Vendor/glfw/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/dev/Engine/Vendor/imgui"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/dev/Engine/Vendor/imgui/backends"
+				}
+			],
+			"language" : "C",
+			"sourceIndexes" : 
+			[
+				25
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 3,
+			"id" : "glfw::@3bc8d31f350e23de9c6e"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "ImGui::@89ff14b4ff87006eb4a0"
+		}
+	],
+	"id" : "GameEngine::@6890427a1f51a3e7e1df",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "/DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "/machine:x64 /debug /INCREMENTAL /subsystem:console",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-LIBPATH:C:\\dev\\Engine\\Vendor\\assimp\\lib",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "lib\\glfw3_Debug.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "lib\\ImGui_Debug.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "assimp-vc143-mt.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "opengl32.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "lib\\glfw3_Debug.lib",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "GameEngine",
+	"nameOnDisk" : "GameEngine.exe",
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22,
+				23,
+				24,
+				25,
+				26
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Core/Application.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Core/GameTime.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Core/Input.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Core/InputLayer.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Core/WindowLayer.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "ECS/SystemManager.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Editor/UILayer.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "GameEngine.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Rendering/Material.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Rendering/Mesh.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Rendering/MeshRenderer.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Rendering/Model.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Rendering/RendererLayer.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Rendering/RendererManager.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Rendering/Shader.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Rendering/ShadowMap.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Rendering/Terrain/Terrain.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Rendering/Texture.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Scene/SceneLayer.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Systems/3rdPersonCameraSystem.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Systems/Camera.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Systems/CameraSystem.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Systems/PhysicsSystem.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Systems/RenderSystem.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Systems/RotationSystem.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "Vendor/glad/src/glad.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Vendor/stb/stb_image.cpp",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "EXECUTABLE"
+}

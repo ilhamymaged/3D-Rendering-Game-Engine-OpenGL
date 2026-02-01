@@ -1,55 +1,40 @@
-#include "InputLayer.h"
-#include "WindowLayer.h"
-#include <iostream>
+#include <InputLayer.h>
+#include <Events.h>
+#include <EventDispatcher.h>
+#include <Input.h>
 
-InputLayer::InputLayer(WindowLayer* windowLayer)
-    : window(windowLayer) 
+#include <imgui.h>
+
+void InputLayer::onEvent(Event& e)
 {
+	EventDispatcher dispatcher(e);
+
+	dispatcher.dispatch<KeyPressedEvent>([&](KeyPressedEvent& event) {
+		if(!WantImGuiCaptureKeyboard()) Input::SetKey(event.getKeyCode(), true);
+		return false;
+	});
+
+	dispatcher.dispatch<KeyReleasedEvent>([&](KeyReleasedEvent& event) {
+		if(!WantImGuiCaptureKeyboard()) Input::SetKey(event.getKeyCode(), false);
+		return false;
+		});
+
+	dispatcher.dispatch<MouseMovedEvent>([&](MouseMovedEvent& event) {
+		if(!WantImGuiCaptureMouse()) Input::SetMousePos(event.getX(), event.getY());
+		return false; 
+	});
+
 }
 
-void InputLayer::onUpdate(float deltaTime) 
+bool InputLayer::WantImGuiCaptureKeyboard()
 {
-    keyState.clear();
-    GLFWwindow* win = window->getWindow();
-
-    for (int key = 32; key <= 348; ++key) {
-        keyState[key] = (glfwGetKey(win, key) == GLFW_PRESS);
-    }
-
-    if(isKeyPressed(GLFW_KEY_ESCAPE))
-		window->close();
+	ImGuiIO& io = ImGui::GetIO();
+	return io.WantCaptureKeyboard;
 }
 
-void InputLayer::onAttach()
+bool InputLayer::WantImGuiCaptureMouse()
 {
-    GLFWwindow* win = window->getWindow();
-    glfwSetWindowUserPointer(win, this);
-    glfwSetCursorPosCallback(win, mouseCallback);
-    glfwSetScrollCallback(win, scrollCallback);
-    glfwSetInputMode(win, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
+	ImGuiIO& io = ImGui::GetIO();
+	return io.WantCaptureMouse;
 }
 
-void InputLayer::mouseCallback(GLFWwindow* win, double xpos, double ypos) {
-    InputLayer* self = (InputLayer*)glfwGetWindowUserPointer(win);
-
-    glm::vec2 pos(xpos, ypos);
-    self->mouse.update(pos, glm::vec2(0));
-}
-
-
-void InputLayer::scrollCallback(GLFWwindow* win, double xoffset, double yoffset) 
-{
-    InputLayer* self = (InputLayer*)glfwGetWindowUserPointer(win);
-    if (!self) return;
-
-    glm::vec2 pos = self->mouse.getPosition();
-    self->mouse.update(pos, glm::vec2(xoffset, yoffset));
-}
-
-bool InputLayer::isKeyPressed(int key) const 
-{
-    auto it = keyState.find(key);
-    if (it != keyState.end())
-        return it->second;
-    return false;
-}

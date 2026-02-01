@@ -1,34 +1,24 @@
 #pragma once
 
-#include <glad/glad.h>
-#include <glm.hpp>
 #include <RendererLayer.h>
-#include <InputLayer.h>
 #include <Layer.h>
-#include <Shader.h>
-#include <CameraLayer.h>
-#include <WindowLayer.h>
-#include <AssetsManager.h>
+#include <Camera.h>
 #include <entt.hpp>  
+#include <SystemManager.h>
 
 class SceneLayer : public Layer
 {
 public:
-	SceneLayer(RendererLayer* renderer, InputLayer* inputLayer, 
-		CameraLayer* cameraLayer, WindowLayer* windowLayer);
-	~SceneLayer() override = default;
-	void onAttach() override;
-	void onDetach() override;
+	SceneLayer(RendererLayer* renderer);
+	~SceneLayer();
 	void onUpdate(float deltaTime) override;
-	void onRender() override;
+	void onEvent(Event& e) override;
+
+	inline entt::registry* getRegistry() { return &registry; }
 
 private:
 	entt::registry registry;
-	AssetManager assets;
-
 	RendererLayer* renderLayer;
-	InputLayer* inputLayer;
-	WindowLayer* windowLayer;
-	CameraLayer* cameraLayer;
-	Shader* shader;
+	SystemManager systemManager;
+	Camera camera;
 };
